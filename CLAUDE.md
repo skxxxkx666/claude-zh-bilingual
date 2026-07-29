@@ -138,7 +138,7 @@ chore(schema): 补充 deprecated 字段
 
 <!-- 每完成一个阶段,手动更新这一节 -->
 
-**阶段**:W3–4 Desktop 首发（进行中）
-**目标**:发布 v0.1.0,完成非 MSIX Desktop 安装、使用、还原与 D1–D4 验证
-**本阶段禁止**:写入 Microsoft Store/MSIX 安装目录,或发布未通过冒烟测试的产物
+**阶段**:W3–4 Desktop 首发（完成）
+**目标**:v0.1.0 私有 release 已发布,非 MSIX Desktop 安装、使用、还原与 D1–D4 验证完成
+**本阶段禁止**:继续扩大 v0.1.0 支持范围,或写入 Microsoft Store/MSIX 安装目录
 **下一阶段**:W5–6 CLI A 层与 300 词术语表
