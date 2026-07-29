@@ -1,0 +1,286 @@
+name: Watch upstream versions
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Run a real update or the historical W7-8 drill
+        required: true
+        default: update-if-needed
+        type: choice
+        options:
+          - update-if-needed
+          - historical-drill
+
+permissions:
+  contents: write
+  issues: write
+  models: read
+  pull-requests: write
+
+concurrency:
+  group: upstream-version-watch
+  cancel-in-progress: false
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    outputs:
+      cli_new: ${{ steps.versions.outputs.cli_new }}
+      cli_version: ${{ steps.versions.outputs.cli_version }}
+      desktop_status: ${{ steps.versions.outputs.desktop_status }}
+      desktop_version: ${{ steps.versions.outputs.desktop_version }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install pipeline
+        run: python -m pip install .
+      - name: Detect official upstream versions
+        id: versions
+        run: |
+          python scripts/update_pipeline.py detect "${RUNNER_TEMP}/versions.json"
+          echo "cli_new=$(jq -r '.cli.new_available' "${RUNNER_TEMP}/versions.json")" \
+            >> "${GITHUB_OUTPUT}"
+          echo "cli_version=$(jq -r '.cli.latest // empty' "${RUNNER_TEMP}/versions.json")" \
+            >> "${GITHUB_OUTPUT}"
+          echo "desktop_status=$(jq -r '.desktop.status' "${RUNNER_TEMP}/versions.json")" \
+            >> "${GITHUB_OUTPUT}"
+          echo "desktop_version=$(jq -r '.desktop.latest // empty' "${RUNNER_TEMP}/versions.json")" \
+            >> "${GITHUB_OUTPUT}"
+          {
+            echo "## Upstream version detection"
+            echo
+            echo '```json'
+            cat "${RUNNER_TEMP}/versions.json"
+            echo '```'
+          } >> "${GITHUB_STEP_SUMMARY}"
+
+  update-cli:
+    needs: detect
+    if: >-
+      ${{
+        (github.event_name == 'schedule' ||
+        inputs.mode == 'update-if-needed') &&
+        needs.detect.outputs.cli_new == 'true'
+      }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.11"
+          cache: pip
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Install dependencies
+        run: |
+          python -m pip install '.[dev]'
+          npm ci --ignore-scripts
+      - name: Skip an already open update
+        id: existing
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ needs.detect.outputs.cli_version }}
+        run: |
+          branch="automation/cli-${VERSION}"
+          count="$(
+            gh pr list \
+              --state open \
+              --head "${branch}" \
+              --json number \
+              --jq 'length'
+          )"
+          blocker_count="$(
+            gh issue list \
+              --state open \
+              --search "\"Upstream update blocked: cli@${VERSION}\" in:title" \
+              --json number \
+              --jq 'length'
+          )"
+          if [ "${count}" -gt 0 ] || [ "${blocker_count}" -gt 0 ]; then
+            echo "skip=true" >> "${GITHUB_OUTPUT}"
+            echo "An update PR or blocker issue for cli@${VERSION} is already open."
+          else
+            echo "skip=false" >> "${GITHUB_OUTPUT}"
+          fi
+      - name: Download, extract, classify, and inherit
+        if: steps.existing.outputs.skip != 'true'
+        env:
+          VERSION: ${{ needs.detect.outputs.cli_version }}
+        run: |
+          python scripts/update_pipeline.py merge-base \
+            cli "${RUNNER_TEMP}/base-corpus.json"
+          python scripts/update_pipeline.py update-cli \
+            "${VERSION}" \
+            "${RUNNER_TEMP}/base-corpus.json" \
+            "${RUNNER_TEMP}/cli-${VERSION}" \
+            "corpus/cli/${VERSION}.json" \
+            "report/cli-${VERSION}-update.json"
+          python scripts/update_pipeline.py gate-update \
+            "report/cli-${VERSION}-update.json"
+      - name: Pretranslate candidates for review
+        if: steps.existing.outputs.skip != 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          VERSION: ${{ needs.detect.outputs.cli_version }}
+        run: |
+          python scripts/pretranslate.py \
+            "corpus/cli/${VERSION}.json" \
+            corpus/glossary.json \
+            "reviews/cli-${VERSION}-pretranslation.json"
+      - name: Generate review body and support matrix
+        if: steps.existing.outputs.skip != 'true'
+        env:
+          VERSION: ${{ needs.detect.outputs.cli_version }}
+        run: |
+          python scripts/update_pipeline.py pr-body \
+            "report/cli-${VERSION}-update.json" \
+            "${RUNNER_TEMP}/pr-body.md" \
+            --suggestions "reviews/cli-${VERSION}-pretranslation.json"
+          python scripts/release_status.py --write
+      - name: Run complete gates before opening PR
+        if: steps.existing.outputs.skip != 'true'
+        run: |
+          python -m unittest discover -s tests -v
+          python schema/validate.py corpus
+          python scripts/release_status.py --check
+          npm test
+      - name: Open automated review PR
+        if: steps.existing.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ needs.detect.outputs.cli_version }}
+        run: |
+          branch="automation/cli-${VERSION}"
+          git switch -c "${branch}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            "corpus/cli/${VERSION}.json" \
+            "reviews/cli-${VERSION}-pretranslation.json" \
+            "report/cli-${VERSION}-update.json" \
+            docs/support-matrix.md
+          git commit -m "feat(corpus): prepare cli@${VERSION} review"
+          git push origin "HEAD:${branch}"
+          gh label create automated \
+            --color 1D76DB \
+            --description "Generated by the upstream version pipeline" \
+            --force
+          gh pr create \
+            --base main \
+            --head "${branch}" \
+            --title "feat(corpus): prepare cli@${VERSION} review" \
+            --body-file "${RUNNER_TEMP}/pr-body.md" \
+            --label automated
+
+  historical-drill:
+    needs: detect
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'historical-drill' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.11"
+          cache: pip
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Install dependencies
+        run: |
+          python -m pip install '.[dev]'
+          npm ci --ignore-scripts
+      - name: Run actual 2.1.111 to 2.1.112 inheritance drill
+        run: |
+          python scripts/update_pipeline.py historical-drill \
+            report/W7-8-automation-drill.json \
+            "${RUNNER_TEMP}/historical-drill"
+          jq '.new_report' report/W7-8-automation-drill.json \
+            > "${RUNNER_TEMP}/drill-report.json"
+          python scripts/update_pipeline.py pr-body \
+            "${RUNNER_TEMP}/drill-report.json" \
+            "${RUNNER_TEMP}/pr-body.md"
+      - name: Run complete gates before opening PR
+        run: |
+          python -m unittest discover -s tests -v
+          python schema/validate.py corpus
+          python scripts/release_status.py --check
+          npm test
+      - name: Open automated drill PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="automation/w7-8-drill-${GITHUB_RUN_ID}"
+          git switch -c "${branch}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add report/W7-8-automation-drill.json
+          git commit -m "chore(ci): record W7-8 historical drill"
+          git push origin "HEAD:${branch}"
+          gh label create automated \
+            --color 1D76DB \
+            --description "Generated by the upstream version pipeline" \
+            --force
+          gh pr create \
+            --base main \
+            --head "${branch}" \
+            --title "chore(ci): W7-8 historical automation drill" \
+            --body-file "${RUNNER_TEMP}/pr-body.md" \
+            --label automated
+
+  report-failure:
+    needs:
+      - detect
+      - update-cli
+      - historical-drill
+    if: >-
+      ${{
+        always() &&
+        (needs.detect.result == 'failure' ||
+        needs.update-cli.result == 'failure' ||
+        needs.historical-drill.result == 'failure')
+      }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open or update automation failure issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          VERSION: ${{ needs.detect.outputs.cli_version }}
+          RUN_URL: >-
+            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ -n "${VERSION}" ]; then
+            title="Upstream update blocked: cli@${VERSION}"
+          else
+            title="Upstream update pipeline failed"
+          fi
+          body="The pipeline stopped without opening or merging a PR. Run: ${RUN_URL}"
+          existing="$(
+            gh issue list \
+              --repo "${REPOSITORY}" \
+              --state open \
+              --search "\"${title}\" in:title" \
+              --json number \
+              --jq '.[0].number // empty'
+          )"
+          if [ -n "${existing}" ]; then
+            gh issue comment "${existing}" --repo "${REPOSITORY}" --body "${body}"
+          else
+            gh issue create \
+              --repo "${REPOSITORY}" \
+              --title "${title}" \
+              --body "${body}"
+          fi
