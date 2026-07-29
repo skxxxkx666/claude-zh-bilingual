@@ -1,0 +1,3328 @@
+[
+  {
+    "source": "Display help for command",
+    "evidence": [
+      "claude --help",
+      "claude agents --help",
+      "claude auth --help",
+      "claude auto-mode --help",
+      "claude doctor --help",
+      "claude gateway --help",
+      "claude install --help",
+      "claude mcp --help",
+      "claude plugin --help",
+      "claude project --help",
+      "claude setup-token --help",
+      "claude ultrareview --help",
+      "claude update --help",
+      "claude auth login --help",
+      "claude auth logout --help",
+      "claude auth status --help",
+      "claude auto-mode config --help",
+      "claude auto-mode critique --help",
+      "claude auto-mode defaults --help",
+      "claude mcp add --help",
+      "claude mcp add-from-claude-desktop --help",
+      "claude mcp add-json --help",
+      "claude mcp get --help",
+      "claude mcp list --help",
+      "claude mcp login --help",
+      "claude mcp logout --help",
+      "claude mcp remove --help",
+      "claude mcp reset-project-choices --help",
+      "claude mcp serve --help",
+      "claude plugin details --help",
+      "claude plugin disable --help",
+      "claude plugin enable --help",
+      "claude plugin eval --help",
+      "claude plugin init --help",
+      "claude plugin install --help",
+      "claude plugin list --help",
+      "claude plugin marketplace --help",
+      "claude plugin prune --help",
+      "claude plugin tag --help",
+      "claude plugin uninstall --help",
+      "claude plugin update --help",
+      "claude plugin validate --help",
+      "claude project purge --help",
+      "claude plugin eval init --help",
+      "claude plugin marketplace add --help",
+      "claude plugin marketplace list --help",
+      "claude plugin marketplace remove --help",
+      "claude plugin marketplace update --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": " MCP server ",
+    "evidence": [
+      "claude --help",
+      "claude agents --help",
+      "claude mcp --help",
+      "claude mcp add --help",
+      "claude mcp add-from-claude-desktop --help",
+      "claude mcp add-json --help",
+      "claude mcp get --help",
+      "claude mcp list --help",
+      "claude mcp login --help",
+      "claude mcp logout --help",
+      "claude mcp remove --help",
+      "claude mcp serve --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code",
+    "evidence": [
+      "claude --help",
+      "claude doctor --help",
+      "claude install --help",
+      "claude mcp --help",
+      "claude plugin --help",
+      "claude project --help",
+      "claude mcp add --help",
+      "claude mcp serve --help",
+      "claude plugin marketplace --help",
+      "claude project purge --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "MCP servers",
+    "evidence": [
+      "claude --help",
+      "claude agents --help",
+      "claude mcp --help",
+      "claude mcp add-from-claude-desktop --help",
+      "claude mcp list --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "JSON string",
+    "evidence": [
+      "claude --help",
+      "claude agents --help",
+      "claude mcp --help",
+      "claude mcp add-json --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Configuration scope (local, user, or project)",
+    "evidence": [
+      "claude mcp add --help",
+      "claude mcp add-from-claude-desktop --help",
+      "claude mcp add-json --help",
+      "claude mcp remove --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Installation scope",
+    "evidence": [
+      "claude plugin disable --help",
+      "claude plugin enable --help",
+      "claude plugin install --help",
+      "claude plugin update --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Output as JSON",
+    "evidence": [
+      "claude auth status --help",
+      "claude plugin list --help",
+      "claude plugin marketplace list --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Override verbose mode setting from config",
+    "evidence": [
+      "claude --help",
+      "claude mcp serve --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Comma-separated list of setting sources to load (user, project, local).",
+    "evidence": [
+      "claude --help",
+      "claude agents --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Enable debug mode",
+    "evidence": [
+      "claude --help",
+      "claude mcp serve --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Update marketplace",
+    "evidence": [
+      "claude plugin marketplace --help",
+      "claude plugin marketplace update --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Remove an MCP server",
+    "evidence": [
+      "claude mcp --help",
+      "claude mcp remove --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "List installed plugins",
+    "evidence": [
+      "claude plugin --help",
+      "claude plugin list --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Enable a disabled plugin",
+    "evidence": [
+      "claude plugin --help",
+      "claude plugin enable --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Disable an enabled plugin",
+    "evidence": [
+      "claude plugin --help",
+      "claude plugin disable --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Uninstall an installed plugin",
+    "evidence": [
+      "claude plugin --help",
+      "claude plugin uninstall --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Manage Claude Code marketplaces",
+    "evidence": [
+      "claude plugin --help",
+      "claude plugin marketplace --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Remove a configured marketplace",
+    "evidence": [
+      "claude plugin marketplace --help",
+      "claude plugin marketplace remove --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Configure and manage MCP servers",
+    "evidence": [
+      "claude --help",
+      "claude mcp --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "List all configured marketplaces",
+    "evidence": [
+      "claude plugin marketplace --help",
+      "claude plugin marketplace list --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Start the Claude Code MCP server",
+    "evidence": [
+      "claude mcp --help",
+      "claude mcp serve --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Validate a plugin or marketplace manifest",
+    "evidence": [
+      "claude plugin --help",
+      "claude plugin validate --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Check for updates and install if available",
+    "evidence": [
+      "claude --help",
+      "claude update --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Inspect auto mode classifier configuration",
+    "evidence": [
+      "claude --help",
+      "claude auto-mode --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Get AI feedback on your custom auto mode rules",
+    "evidence": [
+      "claude auto-mode --help",
+      "claude auto-mode critique --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Add a marketplace from a URL, path, or GitHub repo",
+    "evidence": [
+      "claude plugin marketplace --help",
+      "claude plugin marketplace add --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Add an MCP server (stdio or SSE) with a JSON string",
+    "evidence": [
+      "claude mcp --help",
+      "claude mcp add-json --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Import MCP servers from Claude Desktop (Mac and WSL only)",
+    "evidence": [
+      "claude mcp --help",
+      "claude mcp add-from-claude-desktop --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Update a plugin to the latest version (restart required to apply)",
+    "evidence": [
+      "claude plugin --help",
+      "claude plugin update --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Update marketplace(s) from their source - updates all if no name specified",
+    "evidence": [
+      "claude plugin marketplace --help",
+      "claude plugin marketplace update --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Reset all approved and rejected project-scoped (.mcp.json) servers within this project",
+    "evidence": [
+      "claude mcp --help",
+      "claude mcp reset-project-choices --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Print the effective auto mode config as JSON: your settings where set, defaults otherwise",
+    "evidence": [
+      "claude auto-mode --help",
+      "claude auto-mode config --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Install a plugin from available marketplaces (use plugin@marketplace for specific marketplace)",
+    "evidence": [
+      "claude plugin --help",
+      "claude plugin install --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Remote Control",
+    "evidence": [
+      "claude --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "JSON array",
+    "evidence": [
+      "claude agents --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Bash(git *)",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Your prompt",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Permission mode",
+    "evidence": [
+      "claude --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude in Chrome",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Skip confirmation",
+    "evidence": [
+      "claude project purge --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Disable all skills",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Default permission mode",
+    "evidence": [
+      "claude agents --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Output as JSON (default)",
+    "evidence": [
+      "claude auth status --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Output the version number",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Disable all enabled plugins",
+    "evidence": [
+      "claude plugin disable --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Override which model is used",
+    "evidence": [
+      "claude auto-mode critique --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Output as human-readable text",
+    "evidence": [
+      "claude auth status --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Enable Claude in Chrome integration",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Disable Claude in Chrome integration",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Permission mode to use for the session",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Installation scope: user, project, or local",
+    "evidence": [
+      "claude plugin install --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Force installation even if already installed",
+    "evidence": [
+      "claude install --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Set environment variables (e.g. -e KEY=value)",
+    "evidence": [
+      "claude mcp add --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Uninstall from scope: user, project, or local",
+    "evidence": [
+      "claude plugin uninstall --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Additional directories to allow tool access to",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Enable SendUserMessage tool for agent-to-user communication",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Agent for the current session. Overrides the 'agent' setting.",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Include available plugins from marketplaces (requires --json)",
+    "evidence": [
+      "claude plugin list --help",
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Load MCP servers from JSON files or strings (space-separated)",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Continue the most recent conversation in the current directory",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Where to declare the marketplace: user (default), project, or local",
+    "evidence": [
+      "claude plugin marketplace add --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Effort level for the current session (low, medium, high, xhigh, max)",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Use a specific session ID for the conversation (must be a valid UUID)",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Create a new git worktree for this session (optionally specify a name)",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Transport type (stdio, sse, http). Defaults to stdio if not specified.",
+    "evidence": [
+      "claude mcp add --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Write debug logs to a specific file path (implicitly enables debug mode)",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Prefix for auto-generated Remote Control session names (default: hostname)",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Start an interactive session with Remote Control enabled (optionally named)",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Automatically connect to IDE on startup if exactly one valid IDE is available",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Comma or space-separated list of tool names to deny (e.g. \"Bash(git *) Edit\")",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Only use MCP servers from --mcp-config, ignoring all other MCP configurations",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Comma or space-separated list of tool names to allow (e.g. \"Bash(git *) Edit\")",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Path to a settings JSON file or a JSON string to load additional settings from",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Bypass all permission checks. Recommended only for sandboxes with no internet access.",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Enable debug mode with optional category filtering (e.g., \"api,hooks\" or \"!1p,!file\")",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Resume a conversation by session ID, or open interactive picker with optional search term",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code - starts an interactive session by default, use -p/--print for non-interactive output",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Include all hook lifecycle events in the output stream (only works with --output-format=stream-json)",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Input format (only works with --print): \"text\" (default), or \"stream-json\" (realtime streaming input)",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Resume a session linked to a PR by PR number/URL, or open interactive picker with optional search term",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Include partial message chunks as they arrive (only works with --print and --output-format=stream-json)",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "When resuming, create a new session ID instead of reusing the original (use with --resume or --continue)",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Configuration scope (local, user, or project) - if not specified, removes from whichever scope it exists in",
+    "evidence": [
+      "claude mcp remove --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Disable session persistence - sessions will not be saved to disk and cannot be resumed (only works with --print)",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "File resources to download at startup. Format: file_id:relative_path (e.g., --file file_abc:doc.txt file_def:img.png)",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Limit checkout to specific directories via git sparse-checkout (for monorepos). Example: --sparse .claude-plugin plugins",
+    "evidence": [
+      "claude plugin marketplace add --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Output format (only works with --print): \"text\" (default), \"json\" (single result), or \"stream-json\" (realtime streaming)",
+    "evidence": [
+      "claude --help"
+    ],
+    "decision": "SAFE",
+    "reason": "verbatim read-only --help display text; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Access updated",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Action completed",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Add another configuration option?",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Add another tool?",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Add directory to workspace",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Add Marketplace",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Add to CLAUDE.md",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Admin permissions required",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Advisor disabled",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Advisor Tool",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "After conversation compaction",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "After tool execution",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "After tool execution fails",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Agent has access to all tools",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Agent idle",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Agent MCPs",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Agent parse errors",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Agents dialog dismissed",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "All available plugins are already installed.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "All available plugins are installed for this project.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "All background agents stopped",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "All path commands validated successfully",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "All plugins already exist, skipping migration",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "All plugins from this marketplace are already installed.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "All tools",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "All tools selected",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Allow external CLAUDE.md file imports?",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Allow possible downgrade to stable version",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Allow unsandboxed fallback",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Already at the first node. ",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Already at the last node. ",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Already in a worktree session",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Already in plan mode. No plan written yet.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Already initialized",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Answer in Claude Code on the web",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "API Error",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "API Error: Request was aborted.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Approved Plan",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Approved Plan (edited by user)",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Are you sure you want to delete the agent",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Are you sure you want to delete this permission rule?",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Ask a repository admin to run this command if setup fails",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Ask Claude to create a new app or clone a repository",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Async agent",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Async hook ",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Auto (match terminal)",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Auto mode is unavailable for your plan",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Auto-compact is currently disabled (see /config)",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Auto-compact window reset to model default",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Auto-compact window size",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Auto-connect to IDE (external terminal)",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Auto-install IDE extension",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Auto-update channel",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Auto-updates are disabled in development builds.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Autocompact is disabled",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Autonomous session",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Available (with warnings)",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Available agent types for the Agent tool:",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Available environments:",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Available effort levels for this model",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Back to plugin list",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Background task",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Background tasks",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Background tasks dialog dismissed",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Background work is running",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Base command not found",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Binary file",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Binary file - cannot display diff",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Blocked by hook",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Blocked by PreToolUse hook",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Branched conversation",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Brief-only mode disabled",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Brief-only mode enabled",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Browse custom commands:",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Browse default commands:",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Browser didn't open automatically. URL is shown in UI.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Built-in agents",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Built-in agents are provided by default and cannot be modified.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Built-in Hooks",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Built-in hooks (registered internally by Claude Code)",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Built-in MCPs",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Built-in plugins cannot be updated or uninstalled.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Bypass permissions mode was disabled by settings",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Bypass permissions mode was disabled by your organization policy",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Call cancelled",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Can not delete in empty document",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Cannot connect to server",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Cannot create new file - file already exists.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Cannot delete built-in agents",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Cannot delete permission rules from read-only settings",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Cannot install plugins to managed scope",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Cannot remove agent worktree: no git root provided",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Cannot save built-in agents",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Cannot set permission mode to auto",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Cannot transition to auto mode: gate is not enabled",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Cannot update built-in agents",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Cannot use --all with a specific plugin",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Cannot use same file for input and output",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Case insensitive search (rg -i)",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Check file permissions and ensure the file exists",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Check for new plugins later or add more marketplaces.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Check hooks.json file syntax and structure",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Check LSP server configuration in the plugin manifest",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Check LSP server logs with --debug for details",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Check manifest file follows the required schema",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Check manifest file syntax in the plugin directory",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Check MCP server configuration in .mcp.json or manifest",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Check that the file path is correct",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Check that the path in your manifest or marketplace config is correct",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Check the Claude Code changelog for updates",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Check your internet connection",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Check your internet connection and try again",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Check your internet connection and URL accessibility",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Check your network connection.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Checking for updates",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Checking installation status...",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Choose background color",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Choose the text style that looks best with your terminal",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code diagnostics dismissed",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code installation completed successfully",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code installation failed",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code is an agentic coding CLI based on the Anthropic API.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code needs your approval for the plan",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code needs your attention",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code needs your input",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code Review workflow",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code successfully installed!",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code wants to enter plan mode",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code will always ask for confirmation before using these tools.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code will always reject requests to use denied tools.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code will no longer have access to files in this directory.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code will restart to apply.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Code won't ask before using allowed tools.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude is waiting for your input",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Max",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Pro",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Claude Team",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Clean up the worktree directory.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Cleared connection cache for reconnection",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Command aborted before execution",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Command completed",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Command configuration",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Command Failed",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Command failed with no output",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Command line arguments",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Command processing failed",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Configuration saved. Run /reload-plugins for changes to take effect.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Connected connectors (available for triggers):",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Connection failed",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Contains warnings",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Current connection status",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Current session",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Current setting:",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Currently installed version",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Delete agent",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Delete this hook",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Disable auto-update",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Disable plugin",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Download complete",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Download now? (y/n)",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Edit agent",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Edit file",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Editing file",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Enable Auto-Updates",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Enable auto-update",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Enable plugin",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Enter new session name",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Enter plan mode?",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Entering worktree",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Error editing file",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Error reading file",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Error searching files",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Error writing file",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Esc to cancel",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Execution status",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Execution stopped by hook",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Execution stopped by PostToolUse hook",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Exit plan mode?",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Exited without opening IDE",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Exiting worktree",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Exiting worktree session",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Export cancelled",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Export Conversation",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Export failed with retryable status",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Export failed with unknown error",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Extend with tools",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "External CLAUDE.md includes",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Extracting files...",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Extracting MCPB archive...",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to analyze rules: ",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to check for updates",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to check plugin update availability",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to communicate with iTerm2",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to connect",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to connect before the deadline",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to create backup of Terminal.app preferences, bailing out",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to create object store",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to decrypt",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to delete keychain entry",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to delete task",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to enable Option as Meta key for Terminal.app.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to fetch",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to fetch and cache passes eligibility",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to fetch session logs",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to fetch versions",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to find wrapped line in text",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to generate agent",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to get changed files",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to get npm global prefix",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to get response",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to install ",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to install Alacritty Shift+Enter key binding",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to install Zed Shift+Enter key binding",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to launch remote review session.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to load",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to load components",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to load conversation",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to load conversations",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to load description",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to load marketplace data.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to load marketplaces",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to load MCPB for configuration",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to load plugins",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to load stats",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to open Claude Desktop",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to open Claude Desktop. Please try opening it manually.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to parse",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to parse command",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to parse JSON file",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to read default Terminal.app profile",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to reconnect to ",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to release refresh lock",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to render",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to resume agent: ",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to resume conversation",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to resume session",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to resume session with --print mode",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to save ",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to save agent",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to set up GitHub Actions",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to spawn in-process teammate",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to spawn process - check command and permissions",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to start HTTP bridge process",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to start SOCKS bridge process",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to stash changes",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to submit feedback:",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to update setting",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to update settings. Check your settings file for syntax errors.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to validate session",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Failed to validate session repository",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Fast mode has been disabled by your organization",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Fast mode is not available in the Agent SDK",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Fast/Accurate Search",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Favorite model",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Favorite model:",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Feedback / bug report cancelled",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Feedback cancelled",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Fetching session logs",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "File Changed",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "File does not exist",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "File has not been read yet. Read it first before writing to it.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "File is in a directory that is denied by your permission settings.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "File modified: ",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "File must be read first",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "File not found",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "File Too Large",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "File too large for upload",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Files copied successfully",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Files differ",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Finding files",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Fix the JSON syntax errors in the file",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Focus view disabled",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Focus view enabled",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "For more help:",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Generate with Claude (recommended)",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Generating MCP server configuration...",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Generation cancelled",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Git is required to install marketplaces.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Git not available, skipping official marketplace auto-install",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "GitHub Actions setup failed",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "GitHub Actions workflow created!",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Good Debugging",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Good Explanations",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Help dialog dismissed",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Help improve Claude",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Hook cancelled",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Hook Configuration - Disabled",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Hook details",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Hooks dialog dismissed",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "HTTP hook returned empty body, treating as empty JSON object",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "IDE extension install failed (see /status for info)",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "IDE selection cancelled",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Import MCP Servers from Claude Desktop",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "In plan mode, Claude will:",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Initialization failed",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Initialize a new CLAUDE.md file with codebase documentation",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Input completed",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Install Chrome extension",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Install for all collaborators on this repository (project scope)",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Install for you (user scope)",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Install for you, in this repo only (local scope)",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Install GitHub App",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Install plugins",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Install Shift+Enter key binding for newlines",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Installation cancelled by user",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Installation failed",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Installed components:",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Installed plugins:",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Installing Claude Code native build ",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Insufficient permissions for auto-updates",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Internal error",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  },
+  {
+    "source": "Internal error.",
+    "evidence": [
+      "manual review of extracted cli@2.1.112 candidate occurrence"
+    ],
+    "decision": "SAFE",
+    "reason": "manually reviewed visible CLI candidate; no DANGER or FRAGILE occurrence"
+  }
+]
