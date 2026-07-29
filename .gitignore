@@ -20,3 +20,9 @@ htmlcov/
 .idea/
 .vscode/
 *.log
+
+# Generated Windows launcher payload and build outputs
+/artifacts/
+/launcher/ClaudeZh.Launcher/Payload/
+/launcher/ClaudeZh.Launcher/bin/
+/launcher/ClaudeZh.Launcher/obj/
