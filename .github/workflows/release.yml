@@ -4,14 +4,16 @@ on:
   push:
     branches:
       - main
-    tags:
-      - "v*"
     paths:
+      - ".github/workflows/release.yml"
+      - "bin/**"
       - "corpus/**"
+      - "launcher/**"
       - "patchers/**"
       - "release/**"
       - "package.json"
       - "package-lock.json"
+      - "scripts/build_windows_launcher.ps1"
       - "scripts/release_status.py"
       - "docs/support-matrix.md"
   workflow_dispatch:
@@ -25,12 +27,72 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  launcher:
+    runs-on: windows-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22.23.1"
+          cache: npm
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          dotnet-version: "8.0.421"
+      - name: Install and test Node.js code
+        run: |
+          npm ci --ignore-scripts
+          npm test
+      - name: Build single-file launcher
+        shell: pwsh
+        run: .\scripts\build_windows_launcher.ps1
+      - name: Verify unsigned candidate and embedded runtime
+        shell: pwsh
+        run: |
+          $launcher = ".\artifacts\claude-zh-windows-x64.exe"
+          $packageVersion = (Get-Content -Raw package.json | ConvertFrom-Json).version
+          $versionOutput = & $launcher --launcher-version | Out-String
+          if (
+            $LASTEXITCODE -ne 0 -or
+            $versionOutput -notmatch [regex]::Escape("launcher $packageVersion") -or
+            $versionOutput -notmatch "payload-sha256"
+          ) {
+            throw "Launcher version probe failed."
+          }
+          $signatureStatus = (Get-AuthenticodeSignature $launcher).Status
+          if ($signatureStatus -ne "NotSigned") {
+            throw "Expected unsigned release candidate, found $signatureStatus."
+          }
+          $env:CLAUDE_ZH_LAUNCHER_CACHE = Join-Path $env:RUNNER_TEMP "claude-zh-cache"
+          $helpOutput = & $launcher --help | Out-String
+          if ($LASTEXITCODE -ne 0 -or $helpOutput -notmatch "Usage:") {
+            throw "Embedded Node.js help smoke test failed."
+          }
+          $ptyOutput = & $launcher --launcher-self-test | Out-String
+          if ($LASTEXITCODE -ne 0 -or $ptyOutput -notmatch "PTY_OK") {
+            throw "Embedded node-pty smoke test failed."
+          }
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: release-windows-launcher
+          path: |
+            artifacts/claude-zh-windows-x64.exe
+            artifacts/SHA256SUMS.windows
+          if-no-files-found: error
+          retention-days: 14
+
   release:
+    needs: launcher
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: release-windows-launcher
+          path: launcher-artifacts
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
           python-version: "3.11"
@@ -46,12 +108,20 @@ jobs:
       - name: Verify release tag and gates
         run: |
           expected_tag="v$(node -p "require('./package.json').version")"
-          if [ "${GITHUB_REF_TYPE}" = "tag" ]; then
-            test "${GITHUB_REF_NAME}" = "${expected_tag}"
-          fi
           echo "RELEASE_TAG=${expected_tag}" >> "${GITHUB_ENV}"
+          if [[ "${expected_tag}" == *-* ]]; then
+            echo "RELEASE_PRERELEASE=true" >> "${GITHUB_ENV}"
+          else
+            echo "RELEASE_PRERELEASE=false" >> "${GITHUB_ENV}"
+          fi
           python scripts/release_status.py --check
           python scripts/release_status.py --release-gate
+          test -f launcher-artifacts/claude-zh-windows-x64.exe
+          test -f launcher-artifacts/SHA256SUMS.windows
+          (
+            cd launcher-artifacts
+            sha256sum --check SHA256SUMS.windows
+          )
       - name: Run complete test suite
         run: |
           python -m unittest discover -s tests -v
@@ -62,13 +132,27 @@ jobs:
           npm pack --json > pack.json
           package_file="$(node -e "const pack=require('./pack.json'); process.stdout.write(pack[0].filename)")"
           sha256sum "${package_file}" > SHA256SUMS
+          cat launcher-artifacts/SHA256SUMS.windows >> SHA256SUMS
           echo "PACKAGE_FILE=${package_file}" >> "${GITHUB_ENV}"
       - name: Create GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           if gh release view "${RELEASE_TAG}" >/dev/null 2>&1; then
-            echo "${RELEASE_TAG} already exists; release is current."
+            gh release upload "${RELEASE_TAG}" \
+              "${PACKAGE_FILE}" \
+              SHA256SUMS \
+              launcher-artifacts/claude-zh-windows-x64.exe \
+              launcher-artifacts/SHA256SUMS.windows \
+              --clobber
+            edit_flags=()
+            if [ "${RELEASE_PRERELEASE}" = "true" ]; then
+              edit_flags+=(--prerelease)
+            fi
+            gh release edit "${RELEASE_TAG}" \
+              --title "claude-zh-bilingual ${RELEASE_TAG}" \
+              --notes-file docs/support-matrix.md \
+              "${edit_flags[@]}"
             exit 0
           fi
           if ! git rev-parse --verify "refs/tags/${RELEASE_TAG}" >/dev/null 2>&1; then
@@ -77,16 +161,29 @@ jobs:
             git tag -a "${RELEASE_TAG}" -m "Release ${RELEASE_TAG}"
             git push origin "${RELEASE_TAG}"
           fi
+          release_flags=()
+          if [ "${RELEASE_PRERELEASE}" = "true" ]; then
+            release_flags+=(--prerelease)
+          fi
           gh release create "${RELEASE_TAG}" \
             "${PACKAGE_FILE}" \
             SHA256SUMS \
+            launcher-artifacts/claude-zh-windows-x64.exe \
+            launcher-artifacts/SHA256SUMS.windows \
             --verify-tag \
-            --title "claude-zh ${RELEASE_TAG}" \
-            --notes-file docs/support-matrix.md
+            --title "claude-zh-bilingual ${RELEASE_TAG}" \
+            --notes-file docs/support-matrix.md \
+            "${release_flags[@]}"
 
   report-failure:
-    needs: release
-    if: ${{ always() && needs.release.result == 'failure' }}
+    needs:
+      - launcher
+      - release
+    if: >-
+      ${{
+        always() &&
+        (needs.launcher.result == 'failure' || needs.release.result == 'failure')
+      }}
     runs-on: ubuntu-latest
     permissions:
       contents: read

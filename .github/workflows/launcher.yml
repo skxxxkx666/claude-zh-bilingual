@@ -43,8 +43,13 @@ jobs:
         shell: pwsh
         run: |
           $launcher = ".\artifacts\claude-zh-windows-x64.exe"
+          $packageVersion = (Get-Content -Raw package.json | ConvertFrom-Json).version
           $versionOutput = & $launcher --launcher-version | Out-String
-          if ($LASTEXITCODE -ne 0 -or $versionOutput -notmatch "payload-sha256") {
+          if (
+            $LASTEXITCODE -ne 0 -or
+            $versionOutput -notmatch [regex]::Escape("launcher $packageVersion") -or
+            $versionOutput -notmatch "payload-sha256"
+          ) {
             throw "Launcher version probe failed."
           }
           $env:CLAUDE_ZH_LAUNCHER_CACHE = Join-Path $env:RUNNER_TEMP "claude-zh-cache"

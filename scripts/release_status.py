@@ -11,7 +11,6 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / "release" / "desktop-v0.1.0.json"
 OUTPUT = ROOT / "docs" / "support-matrix.md"
 PACKAGE = ROOT / "package.json"
 CORPUS_ROOT = ROOT / "corpus"
@@ -27,6 +26,11 @@ STATUS_LABELS = {
 def _read_json(path: Path) -> Any:
     with path.open("r", encoding="utf-8") as source:
         return json.load(source)
+
+
+def current_manifest_path(package_path: Path = PACKAGE) -> Path:
+    package = _read_json(package_path)
+    return ROOT / "release" / f"desktop-v{package['version']}.json"
 
 
 def _cell(value: object) -> str:
@@ -83,13 +87,24 @@ def corpus_lifecycle(corpus_root: Path = CORPUS_ROOT) -> list[dict[str, str]]:
 def render_support_matrix(
     manifest: dict[str, Any],
     corpus_root: Path = CORPUS_ROOT,
+    manifest_path: Path | None = None,
 ) -> str:
-    release_state = "可发布" if manifest["release_ready"] else "禁止发布"
+    release_channel = manifest.get("release_channel", "stable")
+    if manifest["release_ready"]:
+        release_state = (
+            "候选可发布" if release_channel == "prerelease" else "可发布"
+        )
+    else:
+        release_state = "禁止发布"
+    manifest_path = manifest_path or (
+        ROOT / "release" / f"desktop-v{manifest['package_version']}.json"
+    )
+    package_filename = f"claude-zh-{manifest['package_version']}.tgz"
     lines = [
         "# 支持矩阵",
         "",
         "> 此文件由 `python scripts/release_status.py --write` 生成，"
-        "数据源是 `release/desktop-v0.1.0.json`，不要手工修改。",
+        f"数据源是 `{manifest_path.relative_to(ROOT).as_posix()}`，不要手工修改。",
         "",
         f"## {manifest['release']} 状态",
         "",
@@ -102,6 +117,48 @@ def render_support_matrix(
         lines.append(
             f"| {_cell(assertion)} | {_cell(result['status'])} | "
             f"{_cell(result['evidence'])} |"
+        )
+
+    launcher = manifest.get("launcher")
+    if launcher:
+        signature = "已签名" if launcher["signed"] else "未签名"
+        lines.extend(
+            [
+                "",
+                "## Windows 单文件启动器（预发布）",
+                "",
+                "> **SmartScreen 提示：** "
+                "此候选 EXE 未做 Authenticode 代码签名，Windows 可能显示"
+                "“Windows 已保护你的电脑”。只从本仓库的 GitHub Release 下载，"
+                "并在运行前核对 SHA-256；无法确认来源或哈希不一致时不要运行。",
+                "",
+                "| 项目 | 值 |",
+                "|---|---|",
+                f"| 平台 | {_cell(launcher['platform'])} |",
+                f"| 文件 | `{_cell(launcher['artifact'])}` |",
+                f"| 内置 Node | `{_cell(launcher['node_version'])}` |",
+                f"| Authenticode | {signature} |",
+            ]
+        )
+        for assertion, result in launcher["smoke"].items():
+            lines.append(
+                f"| {_cell(assertion)} | {_cell(result['status'])}："
+                f"{_cell(result['evidence'])} |"
+            )
+        lines.extend(
+            [
+                "",
+                "下载同一 Release 中的 EXE 与 `SHA256SUMS.windows`，然后核对：",
+                "",
+                "```powershell",
+                "(Get-FileHash .\\claude-zh-windows-x64.exe "
+                "-Algorithm SHA256).Hash.ToLowerInvariant()",
+                "Get-Content .\\SHA256SUMS.windows",
+                "```",
+                "",
+                "两处哈希必须完全一致。确认后双击 EXE，按中文菜单执行安装、"
+                "状态检查或还原。此候选版不替代稳定版 `v0.1.0`。",
+            ]
         )
 
     lines.extend(
@@ -144,10 +201,10 @@ def render_support_matrix(
             "",
             "## 安装与还原",
             "",
-            "从 GitHub Release 下载 `claude-zh-0.1.0.tgz` 后，在空目录执行：",
+            f"从 GitHub Release 下载 `{package_filename}` 后，在空目录执行：",
             "",
             "```powershell",
-            "npm install .\\claude-zh-0.1.0.tgz",
+            f"npm install .\\{package_filename}",
             "npx claude-zh status",
             "npx claude-zh install desktop --mode=zh",
             "npx claude-zh restore desktop",
@@ -165,19 +222,29 @@ def render_support_matrix(
     return "\n".join(lines)
 
 
-def release_gate_errors(manifest: dict[str, Any]) -> list[str]:
+def release_gate_errors(
+    manifest: dict[str, Any],
+    package_path: Path = PACKAGE,
+    corpus_root: Path = CORPUS_ROOT,
+) -> list[str]:
     errors: list[str] = []
-    package = _read_json(PACKAGE)
+    package = _read_json(package_path)
     corpus = _read_json(
-        CORPUS_ROOT / "desktop" / f"{manifest['corpus']['version']}.json"
+        corpus_root / "desktop" / f"{manifest['corpus']['version']}.json"
     )
+    package_version = manifest["package_version"]
+    release_channel = manifest.get("release_channel", "stable")
 
-    if manifest["release"] != f"v{manifest['package_version']}":
+    if manifest["release"] != f"v{package_version}":
         errors.append("release tag does not match manifest package_version")
-    if package["version"] != manifest["package_version"]:
+    if package["version"] != package_version:
         errors.append("package.json version does not match release manifest")
     if not manifest["release_ready"]:
         errors.append("release_ready is false")
+    if release_channel not in {"stable", "prerelease"}:
+        errors.append("release_channel must be stable or prerelease")
+    elif ("-" in package_version) != (release_channel == "prerelease"):
+        errors.append("release_channel does not match package prerelease version")
 
     incomplete = [
         assertion
@@ -202,6 +269,27 @@ def release_gate_errors(manifest: dict[str, Any]) -> list[str]:
     ]
     if unverified:
         errors.append(f"{len(unverified)} SAFE corpus units are not smoke-verified")
+
+    launcher = manifest.get("launcher")
+    if launcher:
+        if launcher.get("status") != "candidate":
+            errors.append("launcher status must be candidate")
+        if launcher.get("artifact") != "claude-zh-windows-x64.exe":
+            errors.append("launcher artifact name is not approved")
+        if launcher.get("platform") != "Windows x64":
+            errors.append("launcher platform must be Windows x64")
+        if launcher.get("node_version") != "22.23.1":
+            errors.append("launcher Node version is not pinned to 22.23.1")
+        if not isinstance(launcher.get("signed"), bool):
+            errors.append("launcher signed state must be explicit")
+        elif not launcher["signed"] and release_channel != "prerelease":
+            errors.append("unsigned launcher is allowed only in a prerelease")
+        launcher_smoke = launcher.get("smoke", {})
+        required_launcher_smoke = {"embedded_cli", "conpty"}
+        if set(launcher_smoke) != required_launcher_smoke or any(
+            result.get("status") != "pass" for result in launcher_smoke.values()
+        ):
+            errors.append("launcher embedded CLI and ConPTY smoke tests must pass")
     return errors
 
 
@@ -213,8 +301,9 @@ def main() -> int:
     actions.add_argument("--release-gate", action="store_true")
     args = parser.parse_args()
 
-    manifest = _read_json(MANIFEST)
-    rendered = render_support_matrix(manifest)
+    manifest_path = current_manifest_path()
+    manifest = _read_json(manifest_path)
+    rendered = render_support_matrix(manifest, manifest_path=manifest_path)
     if args.write:
         OUTPUT.write_text(rendered, encoding="utf-8", newline="\n")
         print(f"wrote {OUTPUT.relative_to(ROOT)}")
