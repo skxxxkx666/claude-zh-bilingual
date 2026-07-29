@@ -1,0 +1,22 @@
+{
+  "format_version": "1.0.0",
+  "target": "cli",
+  "version": "2.1.220",
+  "mode": "zh",
+  "started_at": "2026-07-29T19:28:09.421Z",
+  "ended_at": "2026-07-29T19:58:13.033Z",
+  "requested_minutes": 30,
+  "actual_seconds": 1803.612,
+  "translated_unit_ids": [
+    "a02f1cea3c1d6c6e"
+  ],
+  "translated_hits": 2,
+  "resize_events": 29,
+  "help_cycles": 29,
+  "ansi_sequences": 5322,
+  "help_redraw_observed": true,
+  "forced_kill": false,
+  "exit_code": 0,
+  "signal": null,
+  "protocol_failures": []
+}

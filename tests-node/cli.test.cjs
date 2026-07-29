@@ -43,6 +43,24 @@ test("parses the documented Claude Code Layer A install command", () => {
 });
 
 
+test("parses the documented Claude Code Layer B run command", () => {
+  const result = parseArguments([
+    "run",
+    "code",
+    "--layer=b",
+    "--binary=C:\\Fixtures\\claude.exe",
+    "--",
+    "--model",
+    "sonnet",
+  ]);
+
+  assert.deepEqual(result.positional, ["run", "code"]);
+  assert.equal(result.options.layer, "b");
+  assert.match(result.options.binaryPath, /claude\.exe$/);
+  assert.deepEqual(result.options.forwardArgs, ["--model", "sonnet"]);
+});
+
+
 test("rejects unknown options", () => {
   assert.throws(
     () => parseArguments(["status", "--force=true"]),
@@ -58,6 +76,7 @@ test("rejects unknown options", () => {
 test("usage lists install, restore, and status", () => {
   assert.match(usage(), /install desktop/);
   assert.match(usage(), /install code --layer=a/);
+  assert.match(usage(), /run code --layer=b --binary=PATH/);
   assert.match(usage(), /restore desktop/);
   assert.match(usage(), /restore code/);
   assert.match(usage(), /status/);

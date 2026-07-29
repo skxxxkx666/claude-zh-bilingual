@@ -14,6 +14,10 @@ const {
   restoreCodeLayerA,
   statusCodeLayerA,
 } = require("../patchers/cli-layer-a/index.cjs");
+const {
+  CodeLayerBError,
+  runPtyBridge,
+} = require("../patchers/cli-layer-b/index.cjs");
 
 
 function usage() {
@@ -21,6 +25,7 @@ function usage() {
     "Usage:",
     "  claude-zh install desktop [--mode=zh|bilingual] [--app-root=PATH]",
     "  claude-zh install code --layer=a [--mode=zh|bilingual]",
+    "  claude-zh run code --layer=b --binary=PATH [-- CLAUDE_ARGS...]",
     "  claude-zh restore desktop [--app-root=PATH]",
     "  claude-zh restore code",
     "  claude-zh status [desktop|code] [--app-root=PATH]",
@@ -31,8 +36,13 @@ function usage() {
 
 function parseArguments(argv) {
   const positional = [];
-  const options = {};
-  for (const argument of argv) {
+  const options = { forwardArgs: [] };
+  for (let index = 0; index < argv.length; index += 1) {
+    const argument = argv[index];
+    if (argument === "--") {
+      options.forwardArgs = argv.slice(index + 1);
+      break;
+    }
     if (!argument.startsWith("--")) {
       positional.push(argument);
       continue;
@@ -62,6 +72,8 @@ function parseArguments(argv) {
       options.configRoot = path.resolve(value);
     } else if (name === "layer") {
       options.layer = value;
+    } else if (name === "binary") {
+      options.binaryPath = path.resolve(value);
     } else {
       throw new DesktopPatchError(
         "INVALID_ARGUMENT",
@@ -114,6 +126,19 @@ async function main(argv = process.argv.slice(2)) {
     }
     return 0;
   }
+  if (
+    command === "run"
+    && target === "code"
+    && positional.length === 2
+    && options.layer === "b"
+  ) {
+    const result = await runPtyBridge({
+      ...options,
+      args: options.forwardArgs,
+      mode: "zh",
+    });
+    return result.exitCode;
+  }
   if (command === "restore" && target === "desktop" && positional.length === 2) {
     const result = await restoreDesktop(options);
     console.log(
@@ -158,11 +183,24 @@ async function main(argv = process.argv.slice(2)) {
 
 
 if (require.main === module) {
-  main().catch((error) => {
-    if (error instanceof DesktopPatchError || error instanceof CodeLayerError) {
+  const isPtyRun = process.argv.slice(2).includes("--layer=b");
+  main().then((exitCode) => {
+    if (isPtyRun) {
+      process.exit(exitCode);
+    }
+    process.exitCode = exitCode;
+  }).catch((error) => {
+    if (
+      error instanceof DesktopPatchError
+      || error instanceof CodeLayerError
+      || error instanceof CodeLayerBError
+    ) {
       console.error(`[${error.code}] ${error.message}`);
     } else {
       console.error(error && error.stack ? error.stack : String(error));
+    }
+    if (isPtyRun) {
+      process.exit(1);
     }
     process.exitCode = 1;
   });
