@@ -1,7 +1,7 @@
 {
   "name": "claude-zh",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0-rc.1",
   "description": "安全可还原的 Claude Code / Claude Desktop 简体中文本地化与中英术语对照",
   "keywords": [
     "claude",

@@ -7,6 +7,7 @@ Chinese UI text.
 
 [简体中文](README.md) ·
 [Latest release](https://github.com/skxxxkx666/claude-zh-bilingual/releases/latest) ·
+[Windows EXE candidate](https://github.com/skxxxkx666/claude-zh-bilingual/releases/tag/v0.2.0-rc.1) ·
 [Support matrix](docs/support-matrix.md) ·
 [Contributing](docs/CONTRIBUTING.md)
 
@@ -58,10 +59,23 @@ npx claude-zh restore desktop
 
 ## Windows single-file launcher
 
-A double-clickable `claude-zh-windows-x64.exe` has passed local feasibility
-tests and is built by public CI as a candidate artifact. It embeds a pinned
+The
+[`v0.2.0-rc.1` prerelease](https://github.com/skxxxkx666/claude-zh-bilingual/releases/tag/v0.2.0-rc.1)
+includes a double-clickable `claude-zh-windows-x64.exe`. It embeds a pinned
 Node runtime, validates every extracted file, and does not require a system
-Node/npm installation. It is not yet part of the stable v0.1.0 release.
+Node, npm, or .NET installation.
+
+This candidate is not Authenticode-signed and may trigger Windows SmartScreen.
+Download the EXE and `SHA256SUMS.windows` only from this repository's Release,
+then compare:
+
+```powershell
+(Get-FileHash .\claude-zh-windows-x64.exe -Algorithm SHA256).Hash.ToLowerInvariant()
+Get-Content .\SHA256SUMS.windows
+```
+
+The hashes must match exactly. The stable `v0.1.0` release remains unchanged;
+this EXE is an explicitly unsigned prerelease built only by GitHub Actions.
 
 See [Windows launcher design and limitations](docs/windows-launcher.md).
 

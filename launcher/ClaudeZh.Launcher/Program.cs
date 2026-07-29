@@ -148,6 +148,15 @@ internal static class Program
 
     private static string GetVersion()
     {
+        string? informationalVersion = Assembly
+            .GetExecutingAssembly()
+            .GetCustomAttribute<AssemblyInformationalVersionAttribute>()
+            ?.InformationalVersion;
+        if (!string.IsNullOrWhiteSpace(informationalVersion))
+        {
+            return informationalVersion.Split('+', 2)[0];
+        }
+
         Version? version = Assembly.GetExecutingAssembly().GetName().Version;
         return version is null
             ? "0.0.0"
