@@ -25,6 +25,7 @@ Claude Code / Claude Desktop 中文化 · 中英术语对照模式 · Claude 汉
 - 安装中途失败自动还原；手动还原后逐文件验证原始 SHA-256。
 - 检测到正在运行的 Claude 时拒绝修改，不会结束进程。
 - Microsoft Store / 企业 MSIX 只读检测并拒绝写入。
+- 每 6 小时检查官方版本源；结构稳定时自动继承并开 review PR，低于 80% 继承率时停止并开 issue。
 
 补丁只处理外部语言资源与 SAFE UI 字面量。`app.asar` 仅用于读取版本，不会被重打包；鉴权、登录、凭证、计费、限额和代理路径不在修改范围内。
 
@@ -67,7 +68,7 @@ npx claude-zh restore desktop
 
 还原前同样先退出 Claude。还原成功后，生成的 `zh-CN.json`、状态文件和已使用的备份会被清理。
 
-完整平台状态见 [`docs/support-matrix.md`](docs/support-matrix.md)，Desktop 实测记录见 [`docs/W3-4-总结.md`](docs/W3-4-总结.md)，CLI A 层证据见 [`docs/extension-points.md`](docs/extension-points.md) 和 [`docs/W5-6-总结.md`](docs/W5-6-总结.md)。
+完整平台状态见 [`docs/support-matrix.md`](docs/support-matrix.md)，Desktop 实测记录见 [`docs/W3-4-总结.md`](docs/W3-4-总结.md)，CLI A 层证据见 [`docs/extension-points.md`](docs/extension-points.md) 和 [`docs/W5-6-总结.md`](docs/W5-6-总结.md)，自动化演练与当前原生版本阻塞见 [`docs/W7-8-总结.md`](docs/W7-8-总结.md)。
 
 ## 从源码验证
 
