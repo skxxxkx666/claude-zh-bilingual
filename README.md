@@ -12,7 +12,7 @@
 
 Claude Code / Claude Desktop 中文化 · 中英术语对照模式 · Claude 汉化 zh-CN localization with bilingual terminology
 
-> v0.1.0 支持 Windows 非 MSIX Claude Desktop `1.18286.0`，D1–D4 已全部通过。
+> v0.1.0 支持 Windows 非 MSIX Claude Desktop `1.18286.0`，D1–D4 已全部通过。当前源码另含 Claude Code `2.1.201` 的 A 层适配；当前环境的发布门禁仍受 API 403 阻塞。
 
 ![Claude Desktop 中文菜单](docs/screenshots/desktop-menu-zh.png)
 
@@ -20,6 +20,7 @@ Claude Code / Claude Desktop 中文化 · 中英术语对照模式 · Claude 汉
 
 - `zh`：仅把人工确认的 SAFE 界面文案替换为中文。
 - `bilingual`：中文后按术语优先级保留最多两个可检索英文词。
+- Claude Code A 层：中文 statusline、启动提示、回复样式和 `/zh-*` skills，不修改 Claude Code 程序。
 - 安装前在应用目录之外创建并校验逐文件备份。
 - 安装中途失败自动还原；手动还原后逐文件验证原始 SHA-256。
 - 检测到正在运行的 Claude 时拒绝修改，不会结束进程。
@@ -45,6 +46,18 @@ npx claude-zh install desktop --mode=bilingual
 
 安装前先正常退出 Claude。补丁器会打印备份目录；如果发现 MSIX、版本不匹配、Claude 仍在运行或资源结构不匹配，会在写入前停止。
 
+### Claude Code A 层（当前源码）
+
+```powershell
+npm ci --ignore-scripts
+node .\bin\claude-zh.cjs status code
+node .\bin\claude-zh.cjs install code --layer=a --mode=zh
+claude
+node .\bin\claude-zh.cjs restore code
+```
+
+双语模式把安装命令改为 `--mode=bilingual`。安装器只合并缺失设置；已有 statusline、output style、hooks 和同名文件不会被覆盖。当前 Claude Code `2.1.201` 不注册中文命令名，因此提供 `/zh-compact`、`/zh-help`、`/zh-resume`，不声称 `/压缩` 已受支持。
+
 ## 状态与还原
 
 ```powershell
@@ -54,7 +67,7 @@ npx claude-zh restore desktop
 
 还原前同样先退出 Claude。还原成功后，生成的 `zh-CN.json`、状态文件和已使用的备份会被清理。
 
-完整平台状态见 [`docs/support-matrix.md`](docs/support-matrix.md)，W3–4 实测记录见 [`docs/W3-4-总结.md`](docs/W3-4-总结.md)。
+完整平台状态见 [`docs/support-matrix.md`](docs/support-matrix.md)，Desktop 实测记录见 [`docs/W3-4-总结.md`](docs/W3-4-总结.md)，CLI A 层证据见 [`docs/extension-points.md`](docs/extension-points.md) 和 [`docs/W5-6-总结.md`](docs/W5-6-总结.md)。
 
 ## 从源码验证
 
