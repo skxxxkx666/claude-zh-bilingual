@@ -1,0 +1,50 @@
+name: 翻译改进
+description: 报告现有翻译问题或建议一条 SAFE UI 译文
+title: "[Translation]: "
+labels:
+  - translation
+body:
+  - type: input
+    id: unit_id
+    attributes:
+      label: Unit ID
+      description: corpus 中对应条目的 id
+      placeholder: 5c21be5ac90305e2
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 英文原文
+      description: 只填写这一条 UI 文案，不要粘贴程序代码或长段 prompt
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 当前译文
+      description: 尚未翻译时填写“无”
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: 建议译文
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 理由与 UI 上下文
+      description: 说明出现位置、产品版本和采用该译法的依据
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 安全确认
+      options:
+        - label: 该内容是 UI 展示文案，不是 prompt、tool description 或代码匹配字符串
+          required: true
+        - label: 占位符、英文术语和版本信息已原样保留
+          required: true
