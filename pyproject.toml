@@ -13,5 +13,10 @@ dependencies = [
   "jsonschema[format]==4.25.1",
 ]
 
+[project.optional-dependencies]
+dev = [
+  "Pillow==12.2.0",
+]
+
 [tool.setuptools.packages.find]
 include = ["corelib*", "classifiers*"]

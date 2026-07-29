@@ -1,12 +1,31 @@
 {
-  "name": "claude-zh-bilingual-dev",
+  "name": "claude-zh",
   "private": true,
-  "version": "0.0.0",
-  "description": "Development-only JavaScript parser dependency for claude-zh-bilingual",
+  "version": "0.1.0",
+  "description": "Claude Desktop zh-CN localization patcher with bilingual terminology",
+  "bin": {
+    "claude-zh": "bin/claude-zh.cjs"
+  },
+  "files": [
+    "bin",
+    "corpus",
+    "docs/screenshots/desktop-menu-zh.png",
+    "patchers/desktop-asar",
+    "LICENSE",
+    "README.md"
+  ],
   "engines": {
-    "node": ">=22"
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "test": "node --test tests-node/*.test.cjs",
+    "validate:corpus": "python schema/validate.py corpus",
+    "validate:support": "python scripts/release_status.py --check"
   },
   "devDependencies": {
     "acorn": "8.15.0"
+  },
+  "dependencies": {
+    "@electron/asar": "4.2.1"
   }
 }

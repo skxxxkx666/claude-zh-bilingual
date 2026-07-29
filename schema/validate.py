@@ -20,7 +20,12 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from corelib import display_width, extract_placeholders, unit_id  # noqa: E402
+from corelib import (  # noqa: E402
+    display_width,
+    extract_placeholders,
+    generate_bilingual,
+    unit_id,
+)
 
 
 _SEMVER = re.compile(r"^\d+\.\d+\.\d+$")
@@ -233,33 +238,17 @@ def _validate_unit_semantics(
         )
 
     if isinstance(target, str) and isinstance(bilingual, str):
-        annotations = 0
-        for english, term in glossary.items():
-            chinese = term.get("zh")
-            if (
-                not term.get("keep_en")
-                or not isinstance(chinese, str)
-                or english not in source
-                or chinese not in target
-            ):
-                continue
-            expected_annotation = f"{chinese} ({english})"
-            count = bilingual.count(expected_annotation)
-            if count != 1:
-                issues.append(
-                    Issue(
-                        path,
-                        f"{location}.target_bilingual",
-                        f"expected one annotation {expected_annotation!r}",
-                    )
-                )
-            annotations += count
-        if annotations > 2:
+        expected_bilingual = generate_bilingual(
+            source,
+            target,
+            glossary.values(),
+        )
+        if bilingual != expected_bilingual:
             issues.append(
                 Issue(
                     path,
                     f"{location}.target_bilingual",
-                    "contains more than two glossary annotations",
+                    f"expected {expected_bilingual!r}, got {bilingual!r}",
                 )
             )
     return issues
