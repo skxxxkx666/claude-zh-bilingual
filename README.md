@@ -4,6 +4,7 @@
 
 [English](README.en.md) ·
 [下载稳定版](https://github.com/skxxxkx666/claude-zh-bilingual/releases/latest) ·
+[Windows EXE 候选版](https://github.com/skxxxkx666/claude-zh-bilingual/releases/tag/v0.2.0-rc.1) ·
 [支持矩阵](docs/support-matrix.md) ·
 [参与贡献](docs/CONTRIBUTING.md)
 
@@ -16,12 +17,13 @@
 看得懂中文，也能保留 `compact`、`Permission denied` 等英文关键词去查官方文档和
 搜索报错。项目只翻译经过审核的界面文案，不修改鉴权、网络或模型提示。
 
-> v0.1.0 支持 Windows 非 MSIX Claude Desktop `1.18286.0`，D1–D4 已全部通过。
+> 稳定版 `v0.1.0` 支持 Windows 非 MSIX Claude Desktop `1.18286.0`，
+> D1–D4 已全部通过。
 > 当前源码另含 Claude Code `2.1.201` 的 A 层，以及 `2.1.220` 的实验性 B 层；
 > 两层均已通过 S1–S3。
 >
-> Windows 单文件 EXE 已完成本地可行性验证并进入公开 CI，正式发布前仍按候选产物
-> 处理；当前稳定下载是 GitHub Release 中的 `.tgz`。
+> `v0.2.0-rc.1` 提供 Windows x64 单文件 EXE 候选版。它未经
+> Authenticode 签名，可能触发 SmartScreen；稳定版 `v0.1.0` 保持不变。
 
 ![Claude Desktop 中文菜单](docs/screenshots/desktop-menu-zh.png)
 
@@ -53,12 +55,25 @@ Claude Code 与 Claude Desktop 的产品名、命令、报错关键词和官方�
 
 ### Windows 单文件启动器（候选）
 
-双击 `claude-zh-windows-x64.exe` 后可从中文菜单完成 Desktop、Claude Code A 层的
-安装、状态检查和还原；实验性 B 层放在高级选项中。EXE 内含锁定的 Node 运行时，
-用户不需要另装 Node 或 npm。
+从
+[`v0.2.0-rc.1` 预发布页](https://github.com/skxxxkx666/claude-zh-bilingual/releases/tag/v0.2.0-rc.1)
+下载 `claude-zh-windows-x64.exe` 和 `SHA256SUMS.windows`。此 EXE 未做
+Authenticode 代码签名，只从本仓库 Release 下载，并在运行前核对：
 
-候选启动器只由 GitHub Actions 构建，本地构建不会上传到 Release。架构、缓存目录、
-完整性校验、体积和签名限制见
+```powershell
+(Get-FileHash .\claude-zh-windows-x64.exe -Algorithm SHA256).Hash.ToLowerInvariant()
+Get-Content .\SHA256SUMS.windows
+```
+
+两处哈希必须完全一致。SmartScreen 仍可能显示“Windows 已保护你的电脑”；确认下载
+来源和哈希后，可选择“更多信息”→“仍要运行”。无法确认或哈希不一致时不要运行。
+
+双击 EXE 后可从中文菜单完成 Desktop、Claude Code A 层的安装、状态检查和还原；
+实验性 B 层放在高级选项中。EXE 内含锁定的 Node 运行时，用户不需要另装 Node、
+npm 或 .NET。
+
+Release 中的候选启动器只由 GitHub Actions 构建，本地构建不会上传。架构、缓存
+目录、完整性校验、体积和签名限制见
 [`docs/windows-launcher.md`](docs/windows-launcher.md)。
 
 ### 当前稳定版

@@ -15,6 +15,8 @@
 
 - 发布产物必须由 GitHub Actions 可复现构建。
 - 每个 release asset 必须附带 SHA-256。
+- 未签名 Windows EXE 只允许作为明确标记的 prerelease 发布；README 与 Release
+  说明必须展示 SmartScreen 警告和 SHA-256 核对命令，不得标记为稳定版。
 - Windows 单文件启动器只嵌入官方 Node 运行时、锁定依赖和本项目文件，不得嵌入
   Claude 二进制、ASAR、用户配置或凭证。
 - 启动器释放的每个运行文件必须在执行前通过内置清单的长度与 SHA-256 校验。

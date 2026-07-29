@@ -35,7 +35,8 @@ DLL 和辅助 EXE，必须以普通文件形式由 Windows 加载。
 和许可证保留，并在裁剪后执行真实 PTY 自检。
 
 本地生成的 EXE 只是验证产物，不上传到 GitHub Release。公开资产必须由
-`.github/workflows/launcher.yml` 构建并附 SHA-256。
+`.github/workflows/release.yml` 在 Windows runner 重新构建、完成内置 CLI 与
+ConPTY 自检，并附 SHA-256。
 
 ## 方案比较
 
@@ -87,6 +88,18 @@ claude-zh-windows-x64.exe restore desktop
 - Node 官方分发许可证和 npm 依赖许可证随 payload 保留；
 - Release 只能使用 GitHub Actions 产物，并同时发布 `SHA256SUMS.windows`。
 
-当前原型未做 Authenticode 代码签名。直接公开为稳定版会遇到 Windows SmartScreen
-信誉提示；正式发布前需要明确选择“先发布带 SHA-256 的未签名候选版”或“取得代码
-签名证书后再标记稳定”。
+## v0.2.0-rc.1 发布决策
+
+采用“先发布带 SHA-256 的未签名候选版”：
+
+- `v0.2.0-rc.1` 必须标记为 GitHub prerelease，不替代稳定版 `v0.1.0`；
+- Release 工作流从源码重新构建 EXE，不接收本地产物；
+- 同时发布 `claude-zh-windows-x64.exe`、`SHA256SUMS.windows`、npm `.tgz`
+  和合并校验文件 `SHA256SUMS`；
+- 工作流明确验证 Authenticode 状态为 `NotSigned`、内置版本为
+  `0.2.0-rc.1`、CLI `--help` 和真实 ConPTY 均通过；
+- Release 说明和 README 必须展示 SmartScreen 警告、校验命令、支持范围与还原
+  方式。
+
+这不是对稳定签名门禁的放宽。未签名 EXE 只允许出现在带连字符版本号的预发布版；
+未来稳定 EXE 仍需代码签名策略和候选用户反馈。
