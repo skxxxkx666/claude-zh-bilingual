@@ -1,0 +1,350 @@
+{
+  "format_version": "1.0.0",
+  "target": "cli",
+  "version": "2.1.201",
+  "generated_at": "2026-07-29T00:00:00Z",
+  "units": [
+    {
+      "id": "14758be517b1a745",
+      "source": "Compact this conversation while preserving decisions, changed files, test results, and remaining tasks.",
+      "target": "压缩本次对话，同时保留决策、已改文件、测试结果和剩余任务。",
+      "target_bilingual": "压缩本次对话，同时保留决策、已改文件、测试结果和剩余任务。",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 103,
+      "display_width": 103,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "204a5eb2cd28bcfd",
+      "source": "Cost",
+      "target": "费用",
+      "target_bilingual": "费用",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "3685f584b694b4cc",
+      "source": "Continue the most recent task from its saved context.",
+      "target": "从已保存的上下文继续最近的任务。",
+      "target_bilingual": "从已保存的上下文继续最近的任务。",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 53,
+      "display_width": 53,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "4b66483b042f4475",
+      "source": "Claude Code Chinese Layer A plugin.",
+      "target": "Claude Code 中文 A 层插件。",
+      "target_bilingual": "Claude Code 中文 A 层 (Layer A) 插件。",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 35,
+      "display_width": 35,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "5e2c614c23f02239",
+      "source": "Model",
+      "target": "模型",
+      "target_bilingual": "模型 (Model)",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 5,
+      "display_width": 5,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "6c7e69d888b52206",
+      "source": "Chinese help alias.",
+      "target": "中文帮助别名。",
+      "target_bilingual": "中文帮助别名。",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 19,
+      "display_width": 19,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "9449f2dc6e8cd896",
+      "source": "Layer A active",
+      "target": "A 层已启用",
+      "target_bilingual": "A 层 (Layer A) 已启用",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 14,
+      "display_width": 14,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "97d463889743c58a",
+      "source": "Chinese response style",
+      "target": "中文回复样式",
+      "target_bilingual": "中文回复样式 (Chinese response style)",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 22,
+      "display_width": 22,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "9ba7de256499dd9d",
+      "source": "Respond in Chinese while preserving searchable English terminology.",
+      "target": "用中文回复，并保留可检索的英文术语。",
+      "target_bilingual": "用中文回复，并保留可检索的英文术语。",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 67,
+      "display_width": 67,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "a653e90f408e1716",
+      "source": "Show concise Chinese help for the current task, including available commands when relevant.",
+      "target": "简洁地用中文说明当前任务的帮助信息，适用时列出可用命令。",
+      "target_bilingual": "简洁地用中文说明当前任务的帮助信息，适用时列出可用命令。",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 91,
+      "display_width": 91,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "a6e600a10fede40f",
+      "source": "Context",
+      "target": "上下文",
+      "target_bilingual": "上下文 (Context)",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 7,
+      "display_width": 7,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "b4443e3878b09827",
+      "source": "Show the Chinese Layer A help message.",
+      "target": "显示中文 A 层帮助信息。",
+      "target_bilingual": "显示中文 A 层 (Layer A) 帮助信息。",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 38,
+      "display_width": 38,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "b5f9ffebb76d1726",
+      "source": "Chinese alias for the built-in compact workflow.",
+      "target": "内置 compact 工作流的中文别名。",
+      "target_bilingual": "内置 compact 工作流的中文别名。",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 48,
+      "display_width": 48,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "b6b54201f23d00f5",
+      "source": "compact",
+      "target": "压缩",
+      "target_bilingual": "压缩 (compact)",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 7,
+      "display_width": 7,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "b79cac926e0b2e34",
+      "source": "Help",
+      "target": "帮助",
+      "target_bilingual": "帮助",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "c8f84c3c5378b920",
+      "source": "Directory",
+      "target": "目录",
+      "target_bilingual": "目录",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 9,
+      "display_width": 9,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "d640c7421da06661",
+      "source": "Resume",
+      "target": "继续",
+      "target_bilingual": "继续 (Resume)",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 6,
+      "display_width": 6,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "f090741ae1f75728",
+      "source": "Chinese resume alias.",
+      "target": "中文继续别名。",
+      "target_bilingual": "中文继续别名。",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 21,
+      "display_width": 21,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    },
+    {
+      "id": "f8b363a075f5af6b",
+      "source": "Use Chinese for explanatory prose. Preserve code, commands, paths, identifiers, and official product names in their original form.",
+      "target": "说明文字使用中文。代码、命令、路径、标识符和官方产品名保留原文。",
+      "target_bilingual": "说明文字使用中文。代码、命令、路径、标识符和官方产品名保留原文。",
+      "risk": "SAFE",
+      "risk_reason": "manual review: generated Layer A display or configuration text",
+      "surface": "cli.layer_a.generated",
+      "byte_budget": 130,
+      "display_width": 130,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.201"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "W5 Layer A generated text"
+    }
+  ]
+}
