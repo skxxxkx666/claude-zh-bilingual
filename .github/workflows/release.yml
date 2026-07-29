@@ -1,0 +1,56 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.11"
+          cache: pip
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Install dependencies
+        run: |
+          python -m pip install '.[dev]'
+          npm ci --ignore-scripts
+      - name: Verify release tag and gates
+        run: |
+          expected_tag="v$(node -p "require('./package.json').version")"
+          test "${GITHUB_REF_NAME}" = "${expected_tag}"
+          python scripts/release_status.py --check
+          python scripts/release_status.py --release-gate
+      - name: Run complete test suite
+        run: |
+          python -m unittest discover -s tests -v
+          python schema/validate.py corpus
+          npm test
+      - name: Build release package and checksum
+        run: |
+          npm pack --json > pack.json
+          package_file="$(node -e "const pack=require('./pack.json'); process.stdout.write(pack[0].filename)")"
+          sha256sum "${package_file}" > SHA256SUMS
+          echo "PACKAGE_FILE=${package_file}" >> "${GITHUB_ENV}"
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" \
+            "${PACKAGE_FILE}" \
+            SHA256SUMS \
+            --verify-tag \
+            --title "claude-zh ${GITHUB_REF_NAME}" \
+            --notes-file docs/support-matrix.md
