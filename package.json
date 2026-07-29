@@ -2,7 +2,7 @@
   "name": "claude-zh",
   "private": true,
   "version": "0.1.0",
-  "description": "Claude Desktop zh-CN localization patcher with bilingual terminology",
+  "description": "Claude Code and Desktop zh-CN localization with bilingual terminology",
   "bin": {
     "claude-zh": "bin/claude-zh.cjs"
   },
@@ -10,6 +10,7 @@
     "bin",
     "corpus",
     "docs/screenshots/desktop-menu-zh.png",
+    "patchers/cli-layer-a",
     "patchers/desktop-asar",
     "LICENSE",
     "README.md"

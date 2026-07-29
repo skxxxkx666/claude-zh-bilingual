@@ -27,6 +27,22 @@ test("parses the documented Desktop install command", () => {
 });
 
 
+test("parses the documented Claude Code Layer A install command", () => {
+  const result = parseArguments([
+    "install",
+    "code",
+    "--layer=a",
+    "--mode=zh",
+    "--config-root=C:\\Fixtures\\.claude",
+  ]);
+
+  assert.deepEqual(result.positional, ["install", "code"]);
+  assert.equal(result.options.layer, "a");
+  assert.equal(result.options.mode, "zh");
+  assert.match(result.options.configRoot, /\.claude$/);
+});
+
+
 test("rejects unknown options", () => {
   assert.throws(
     () => parseArguments(["status", "--force=true"]),
@@ -41,7 +57,9 @@ test("rejects unknown options", () => {
 
 test("usage lists install, restore, and status", () => {
   assert.match(usage(), /install desktop/);
+  assert.match(usage(), /install code --layer=a/);
   assert.match(usage(), /restore desktop/);
+  assert.match(usage(), /restore code/);
   assert.match(usage(), /status/);
 });
 

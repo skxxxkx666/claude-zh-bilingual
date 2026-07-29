@@ -8,14 +8,22 @@ const {
   restoreDesktop,
   statusDesktop,
 } = require("../patchers/desktop-asar/index.cjs");
+const {
+  CodeLayerError,
+  installCodeLayerA,
+  restoreCodeLayerA,
+  statusCodeLayerA,
+} = require("../patchers/cli-layer-a/index.cjs");
 
 
 function usage() {
   return [
     "Usage:",
     "  claude-zh install desktop [--mode=zh|bilingual] [--app-root=PATH]",
+    "  claude-zh install code --layer=a [--mode=zh|bilingual]",
     "  claude-zh restore desktop [--app-root=PATH]",
-    "  claude-zh status [desktop] [--app-root=PATH]",
+    "  claude-zh restore code",
+    "  claude-zh status [desktop|code] [--app-root=PATH]",
     "  claude-zh --help",
   ].join("\n");
 }
@@ -50,6 +58,10 @@ function parseArguments(argv) {
       options.appRoot = path.resolve(value);
     } else if (name === "data-root") {
       options.dataRoot = path.resolve(value);
+    } else if (name === "config-root") {
+      options.configRoot = path.resolve(value);
+    } else if (name === "layer") {
+      options.layer = value;
     } else {
       throw new DesktopPatchError(
         "INVALID_ARGUMENT",
@@ -83,12 +95,48 @@ async function main(argv = process.argv.slice(2)) {
     );
     return 0;
   }
+  if (
+    command === "install"
+    && target === "code"
+    && positional.length === 2
+    && options.layer === "a"
+  ) {
+    const result = await installCodeLayerA(options);
+    console.log(`Installed Claude Code Layer A in ${result.mode} mode.`);
+    console.log(`Config: ${result.configRoot}`);
+    console.log(`Backup: ${result.backupRoot}`);
+    console.log(`Plugin: ${result.pluginRoot}`);
+    if (result.skippedSettings.length > 0) {
+      console.log(`Preserved existing settings: ${result.skippedSettings.join(", ")}`);
+    }
+    if (result.skippedAssets.length > 0) {
+      console.log(`Preserved existing files: ${result.skippedAssets.join(", ")}`);
+    }
+    return 0;
+  }
   if (command === "restore" && target === "desktop" && positional.length === 2) {
     const result = await restoreDesktop(options);
     console.log(
       `Restored ${result.restoredFiles} file(s); original SHA-256 values verified.`,
     );
     console.log(`App: ${result.appRoot}`);
+    return 0;
+  }
+  if (command === "restore" && target === "code" && positional.length === 2) {
+    const result = await restoreCodeLayerA(options);
+    console.log(
+      result.exactSettingsRestore
+        ? "Restored the original Claude Code settings byte-for-byte."
+        : "Removed managed settings and preserved later user changes.",
+    );
+    console.log(`Config: ${result.configRoot}`);
+    console.log(`Backup retained at: ${result.backupRoot}`);
+    if (result.preservedSettings.length > 0) {
+      console.log(`Preserved changed settings: ${result.preservedSettings.join(", ")}`);
+    }
+    if (result.preservedAssets.length > 0) {
+      console.log(`Preserved changed files: ${result.preservedAssets.join(", ")}`);
+    }
     return 0;
   }
   if (
@@ -100,13 +148,18 @@ async function main(argv = process.argv.slice(2)) {
     console.log(JSON.stringify(result, null, 2));
     return 0;
   }
+  if (command === "status" && target === "code" && positional.length === 2) {
+    const result = await statusCodeLayerA(options);
+    console.log(JSON.stringify(result, null, 2));
+    return 0;
+  }
   throw new DesktopPatchError("INVALID_ARGUMENT", usage());
 }
 
 
 if (require.main === module) {
   main().catch((error) => {
-    if (error instanceof DesktopPatchError) {
+    if (error instanceof DesktopPatchError || error instanceof CodeLayerError) {
       console.error(`[${error.code}] ${error.message}`);
     } else {
       console.error(error && error.stack ? error.stack : String(error));
