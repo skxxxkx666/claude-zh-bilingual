@@ -9,7 +9,7 @@
 | statusline | 支持，已在真实 TUI 显示 | `settings.json` 的 `statusLine` 命令 |
 | hooks | 支持，`SessionStart` 已在真实 TUI 显示 | 追加一个 `startup` 命令 hook |
 | 自定义 slash command | ASCII 名称支持；中文名称在 `2.1.201` 未注册 | `/zh-compact`、`/zh-help`、`/zh-resume` |
-| output style | 配置、选中状态已验证；模型响应受账号 403 阻塞 | `output-styles/claude-zh.md` |
+| output style | 配置、选中状态及中文模型响应均已验证 | `output-styles/claude-zh.md` |
 | `CLAUDE.md` 注入 | 支持，但本阶段未采用 | 保持用户和项目 `CLAUDE.md` 不变 |
 | 插件 | manifest 严格校验和临时加载均通过 | 生成可独立加载的 `claude-zh-layer-a` 插件 |
 
@@ -92,13 +92,19 @@ keep-coding-instructions: true
 Output style    中文回复样式
 ```
 
-这证明文件已被发现并选中。需要模型响应的最终行为测试被当前账号的服务端错误阻塞：
+这证明文件已被发现并选中。传递 Windows 当前系统代理后，使用英文请求：
 
 ```text
-Failed to authenticate. API Error: 403 Request not allowed
+Give a one-sentence greeting to a developer.
 ```
 
-同一命令在完整还原 A 层后仍返回相同 403，因此不是本次配置注入造成。A 层不写 `CLAUDE.md`，避免把个人回复偏好混入项目指令。
+模型返回中文：
+
+```text
+你好,今天有什么开发相关的问题需要帮忙吗?
+```
+
+未传递代理时，A 层安装前后都返回相同 `403 Request not allowed`；以进程级 `HTTP_PROXY`、`HTTPS_PROXY` 临时传递 Windows 已启用的本地系统代理后，模型请求立即通过。根因是 Claude CLI 没有继承系统代理，不是本次配置注入。排障路径与官方 [403 登录后排障说明](https://code.claude.com/docs/en/troubleshoot-install#403-forbidden-after-login) 一致。A 层不写 `CLAUDE.md`，避免把个人回复偏好混入项目指令。
 
 ## 5. 插件机制
 

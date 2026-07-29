@@ -12,7 +12,7 @@
 
 Claude Code / Claude Desktop 中文化 · 中英术语对照模式 · Claude 汉化 zh-CN localization with bilingual terminology
 
-> v0.1.0 支持 Windows 非 MSIX Claude Desktop `1.18286.0`，D1–D4 已全部通过。当前源码另含 Claude Code `2.1.201` 的 A 层适配；当前环境的发布门禁仍受 API 403 阻塞。
+> v0.1.0 支持 Windows 非 MSIX Claude Desktop `1.18286.0`，D1–D4 已全部通过。当前源码另含 Claude Code `2.1.201` 的 A 层适配，S1–S3 已全部通过。
 
 ![Claude Desktop 中文菜单](docs/screenshots/desktop-menu-zh.png)
 
