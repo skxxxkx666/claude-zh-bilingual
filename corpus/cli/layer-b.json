@@ -1,0 +1,26 @@
+{
+  "format_version": "1.0.0",
+  "target": "cli",
+  "version": "2.1.220",
+  "generated_at": "2026-07-30T00:00:00Z",
+  "units": [
+    {
+      "id": "a02f1cea3c1d6c6e",
+      "source": "Thinking…",
+      "target": "正在思考…",
+      "target_bilingual": "正在思考…",
+      "risk": "SAFE",
+      "risk_reason": "manual review: exact text observed on the interactive PTY spinner surface",
+      "surface": "cli.pty.spinner",
+      "byte_budget": 11,
+      "display_width": 9,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.220"
+      ],
+      "verified_at": "cli@2.1.220",
+      "deprecated": false,
+      "notes": "W9 Layer B output-only replacement; source and target both occupy 9 terminal cells"
+    }
+  ]
+}
