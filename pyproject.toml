@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claude-zh-bilingual"
+version = "0.0.0"
+description = "Claude Code and Claude Desktop zh-CN localization corpus and tooling"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+  "jsonschema[format]==4.25.1",
+]
+
+[tool.setuptools.packages.find]
+include = ["corelib*", "classifiers*"]

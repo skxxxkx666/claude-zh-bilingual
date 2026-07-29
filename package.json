@@ -1,0 +1,12 @@
+{
+  "name": "claude-zh-bilingual-dev",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Development-only JavaScript parser dependency for claude-zh-bilingual",
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "acorn": "8.15.0"
+  }
+}

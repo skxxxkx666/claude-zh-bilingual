@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/claude-zh-bilingual/schema/unit.schema.json",
+  "title": "Translation Unit",
+  "description": "claude-zh-bilingual 翻译语料的最小单元。risk 默认 UNKNOWN,只有显式 SAFE 才允许携带译文。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "source", "risk", "surface", "byte_budget", "display_width", "placeholders", "seen_in"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{16}$",
+      "description": "规范化 source 的 SHA-256 前 16 位 hex。计算规则见 docs/SPEC.md §1,任何实现偏差都会破坏跨版本继承。"
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500,
+      "description": "原始英文字符串,保留原始首尾空白与内部格式。超过 500 字符的一律视为 prompt,不应进入语料。"
+    },
+    "target": {
+      "type": ["string", "null"],
+      "default": null,
+      "description": "纯中文模式译文。risk 非 SAFE 时必须为 null。"
+    },
+    "target_bilingual": {
+      "type": ["string", "null"],
+      "default": null,
+      "description": "中英对照模式译文,格式见 docs/PLAN.md §4.3。risk 非 SAFE 时必须为 null。"
+    },
+    "risk": {
+      "type": "string",
+      "enum": ["SAFE", "DANGER", "FRAGILE", "UNKNOWN"],
+      "default": "UNKNOWN",
+      "description": "SAFE=纯展示可翻译;DANGER=会进入 prompt;FRAGILE=被代码自身匹配;UNKNOWN=未判定。默认 UNKNOWN 是 fail-safe 设计,不得更改默认值。"
+    },
+    "risk_reason": {
+      "type": ["string", "null"],
+      "default": null,
+      "description": "风险判定依据。分类器自动判定时填规则编号(如 R-TOOLDESC),人工判定时填简述。"
+    },
+    "surface": {
+      "type": "string",
+      "pattern": "^(cli|desktop)\\.[a-z0-9_.]+$",
+      "description": "出现位置的点分路径,如 cli.tui.prompt、desktop.settings.general。用于按界面区域批量审阅。"
+    },
+    "byte_budget": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "source 的 UTF-8 字节数。二进制原地替换时译文字节数不得超过此值。"
+    },
+    "display_width": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "source 的终端显示宽度(East Asian Width 计算,见 docs/SPEC.md §2)。译文宽度应尽量不超过此值。"
+    },
+    "placeholders": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "source 中的占位符原文,按出现顺序保存并允许重复,如 [\"{0}\", \"%s\", \"{0}\"]。译文必须原样包含全部占位符,CI 强制校验。"
+    },
+    "seen_in": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^(cli|desktop)@[0-9]+\\.[0-9]+\\.[0-9]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "出现过该字符串的版本列表,按版本升序。跨版本继承的依据。"
+    },
+    "verified_at": {
+      "type": ["string", "null"],
+      "pattern": "^(cli|desktop)@[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "default": null,
+      "description": "最后一次通过冒烟测试验证的版本。risk 为 UNKNOWN 时必须为 null。"
+    },
+    "deprecated": {
+      "type": "boolean",
+      "default": false,
+      "description": "该字符串在最新版本中已消失。保留不删,用于支撑旧版本适配。"
+    },
+    "notes": {
+      "type": "string",
+      "default": "",
+      "maxLength": 300,
+      "description": "译者备注。上下文说明、歧义提示、待确认事项。"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "risk": { "not": { "const": "SAFE" } } }
+      },
+      "then": {
+        "properties": {
+          "target": { "const": null },
+          "target_bilingual": { "const": null },
+          "verified_at": { "const": null }
+        },
+        "$comment": "R3 红线的机器可执行形式:非 SAFE 的 unit 不得携带译文或验证标记。"
+      }
+    },
+    {
+      "if": {
+        "properties": { "verified_at": { "type": "string" } },
+        "required": ["verified_at"]
+      },
+      "then": {
+        "properties": { "risk": { "const": "SAFE" } },
+        "required": ["target"],
+        "$comment": "已验证的 unit 必须是 SAFE 且有译文。"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "id": "5c21be5ac90305e2",
+      "source": "Continue?",
+      "target": "继续?",
+      "target_bilingual": "继续 (Continue)?",
+      "risk": "SAFE",
+      "risk_reason": "R-UITEXT",
+      "surface": "cli.tui.prompt",
+      "byte_budget": 9,
+      "display_width": 9,
+      "placeholders": [],
+      "seen_in": ["cli@2.1.113", "cli@2.1.116"],
+      "verified_at": "cli@2.1.116",
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "f193b8dde1112891",
+      "source": "Reads a file from the local filesystem. The file_path parameter must be an absolute path.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "DANGER",
+      "risk_reason": "R-TOOLDESC",
+      "surface": "cli.tool.read",
+      "byte_budget": 89,
+      "display_width": 89,
+      "placeholders": [],
+      "seen_in": ["cli@2.1.116"],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "tool description,翻译会导致 agent 行为退化"
+    },
+    {
+      "id": "91e30b891f6098b1",
+      "source": "{0} files changed",
+      "target": "{0} 个文件已变更",
+      "target_bilingual": "{0} 个文件已变更",
+      "risk": "SAFE",
+      "risk_reason": "R-UITEXT",
+      "surface": "cli.tui.status",
+      "byte_budget": 17,
+      "display_width": 17,
+      "placeholders": ["{0}"],
+      "seen_in": ["cli@2.1.116"],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": "无需保留英文,对照模式与纯中文一致"
+    }
+  ]
+}

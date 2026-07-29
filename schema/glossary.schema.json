@@ -1,0 +1,221 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/claude-zh-bilingual/schema/glossary.schema.json",
+  "title": "Glossary",
+  "description": "术语对照词表。决定每个英文术语在译文中是否保留原文,是本项目差异化的规则来源。CI 强制所有 translation unit 与本表一致。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "terms"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "terms": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/term"
+      }
+    }
+  },
+  "$defs": {
+    "term": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "en",
+        "zh",
+        "keep_en",
+        "reason"
+      ],
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1,
+          "description": "英文术语,大小写必须与官方写法完全一致。用户会复制它去搜索。"
+        },
+        "zh": {
+          "type": "string",
+          "minLength": 1,
+          "description": "中文译法。全局唯一,同一 en 不允许出现第二种 zh。"
+        },
+        "keep_en": {
+          "type": "boolean",
+          "description": "对照模式下是否附带英文原文。true 时渲染为「中文 (English)」。"
+        },
+        "reason": {
+          "type": "string",
+          "enum": [
+            "PRODUCT_NAME",
+            "SEARCHABILITY",
+            "DOC_FREQUENCY",
+            "ECOSYSTEM",
+            "GENERIC_UI",
+            "COMMON_TECH",
+            "STATUS_WORD",
+            "WIDTH",
+            "ALREADY_EN"
+          ],
+          "description": "判据编号。PRODUCT_NAME/SEARCHABILITY/DOC_FREQUENCY/ECOSYSTEM 对应 keep_en=true(PLAN §4.1);GENERIC_UI/COMMON_TECH/STATUS_WORD/WIDTH/ALREADY_EN 对应 keep_en=false(PLAN §4.2)。ALREADY_EN 表示 zh 本身即英文原词,无需括号重复。"
+        },
+        "source_ref": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null,
+          "description": "官方文档链接。DOC_FREQUENCY 与 PRODUCT_NAME 判据建议提供。"
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [],
+          "description": "同一概念的其他英文写法,用于 CI 一致性检测。如 slash command / slash-command。"
+        },
+        "notes": {
+          "type": "string",
+          "default": "",
+          "maxLength": 200
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "reason": {
+                "enum": [
+                  "PRODUCT_NAME",
+                  "SEARCHABILITY",
+                  "DOC_FREQUENCY",
+                  "ECOSYSTEM"
+                ]
+              }
+            },
+            "required": [
+              "reason"
+            ]
+          },
+          "then": {
+            "properties": {
+              "keep_en": {
+                "const": true
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "reason": {
+                "enum": [
+                  "GENERIC_UI",
+                  "COMMON_TECH",
+                  "STATUS_WORD",
+                  "WIDTH",
+                  "ALREADY_EN"
+                ]
+              }
+            },
+            "required": [
+              "reason"
+            ]
+          },
+          "then": {
+            "properties": {
+              "keep_en": {
+                "const": false
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "examples": [
+    {
+      "version": "0.1.0",
+      "updated_at": "2026-08-01",
+      "terms": [
+        {
+          "en": "compact",
+          "zh": "压缩上下文",
+          "keep_en": true,
+          "reason": "PRODUCT_NAME",
+          "source_ref": null,
+          "aliases": [
+            "/compact"
+          ],
+          "notes": "slash 命令名,必须小写"
+        },
+        {
+          "en": "Plan mode",
+          "zh": "计划模式",
+          "keep_en": true,
+          "reason": "PRODUCT_NAME",
+          "source_ref": null,
+          "aliases": [],
+          "notes": ""
+        },
+        {
+          "en": "Permission denied",
+          "zh": "权限被拒绝",
+          "keep_en": true,
+          "reason": "SEARCHABILITY",
+          "source_ref": null,
+          "aliases": [],
+          "notes": "高频报错,用户会拿去搜索"
+        },
+        {
+          "en": "hook",
+          "zh": "钩子",
+          "keep_en": true,
+          "reason": "DOC_FREQUENCY",
+          "source_ref": null,
+          "aliases": [
+            "hooks"
+          ],
+          "notes": ""
+        },
+        {
+          "en": "token",
+          "zh": "token",
+          "keep_en": false,
+          "reason": "ALREADY_EN",
+          "source_ref": null,
+          "aliases": [
+            "tokens"
+          ],
+          "notes": "已是中文语境通用词,直接沿用英文,不加括号"
+        },
+        {
+          "en": "Cancel",
+          "zh": "取消",
+          "keep_en": false,
+          "reason": "GENERIC_UI",
+          "source_ref": null,
+          "aliases": [],
+          "notes": ""
+        },
+        {
+          "en": "Loading",
+          "zh": "加载中",
+          "keep_en": false,
+          "reason": "STATUS_WORD",
+          "source_ref": null,
+          "aliases": [],
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}

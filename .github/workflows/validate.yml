@@ -1,0 +1,51 @@
+name: Validate corpus
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  corpus:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install validator
+        run: python -m pip install .
+      - name: Count current approvals
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          approvals="$(
+            gh api \
+              "repos/${REPOSITORY}/pulls/${PR_NUMBER}/reviews?per_page=100" \
+              --jq 'sort_by(.submitted_at) | group_by(.user.login) | map(last) | map(select(.state == "APPROVED")) | length'
+          )"
+          echo "Approval count: ${approvals}"
+          if [ "${approvals}" -ge 2 ]; then
+            echo "ALLOW_RISK_DOWNGRADES=true" >> "${GITHUB_ENV}"
+          fi
+      - name: Validate schema and semantic rules
+        env:
+          BASE_REF: origin/${{ github.base_ref }}
+        run: |
+          args=(corpus)
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            args+=(--baseline-ref "${BASE_REF}")
+          fi
+          if [ "${ALLOW_RISK_DOWNGRADES:-false}" = "true" ]; then
+            args+=(--allow-risk-downgrades)
+          fi
+          python schema/validate.py "${args[@]}"

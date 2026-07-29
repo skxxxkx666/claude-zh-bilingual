@@ -1,0 +1,22 @@
+# Upstream packages and extracted proprietary artifacts
+samples/
+extracted/
+*.asar
+*.tgz
+cli.js
+**/node_modules/
+*.backup
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local tooling
+.idea/
+.vscode/
+*.log
