@@ -1,0 +1,69 @@
+name: Bug 报告
+description: 报告安装、运行、还原或界面问题
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: 产品
+      options:
+        - Claude Code
+        - Claude Desktop
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: 操作系统
+      placeholder: Windows 11 24H2 x64
+    validations:
+      required: true
+  - type: input
+    id: claude_version
+    attributes:
+      label: Claude 版本
+    validations:
+      required: true
+  - type: input
+    id: patch_version
+    attributes:
+      label: claude-zh 版本
+    validations:
+      required: true
+  - type: textarea
+    id: status
+    attributes:
+      label: claude-zh status 输出
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+    validations:
+      required: true
+  - type: checkboxes
+    id: recovery
+    attributes:
+      label: 还原状态
+      options:
+        - label: 我已阅读 README 的还原步骤，并说明还原是否成功
+          required: true
+  - type: markdown
+    attributes:
+      value: 安全漏洞或可能被利用的问题请使用 Security 页面中的私密报告，不要公开细节。

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安全漏洞
+    url: https://github.com/skxxxkx666/claude-zh-bilingual/security/advisories/new
+    about: 使用 GitHub 私密漏洞报告，不要公开可利用细节
+  - name: 使用问题与讨论
+    url: https://github.com/skxxxkx666/claude-zh-bilingual/discussions
+    about: 安装帮助、设计讨论和一般问题

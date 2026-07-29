@@ -1,0 +1,42 @@
+name: 新版本适配请求
+description: 报告尚未被自动流水线处理的官方新版本
+title: "[Upstream]: "
+labels:
+  - upstream
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: 产品
+      options:
+        - Claude Code
+        - Claude Desktop
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 官方版本
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 官方来源
+      description: npm registry、官方安装包或官方更新信息链接
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: 当前流水线状态
+      description: 说明是否已有自动 PR、阻塞 issue 或失败的 Actions 运行
+    validations:
+      required: true
+  - type: checkboxes
+    id: artifact
+    attributes:
+      label: 内容确认
+      options:
+        - label: 我没有上传 Claude 二进制、ASAR、安装包或解包文件
+          required: true
