@@ -1,0 +1,98 @@
+{
+  "format_version": "1.0.0",
+  "target": "cli",
+  "version": "2.1.112",
+  "generated_at": "2026-07-29T03:12:57Z",
+  "units": [
+    {
+      "id": "31fbef162594de01",
+      "source": "Continue",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-DEFAULT",
+      "surface": "cli.ast.literal",
+      "byte_budget": 8,
+      "display_width": 8,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.112"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "59b77dbd5bd2fc76",
+      "source": "Permission denied",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "FRAGILE",
+      "risk_reason": "R-CODEMATCH",
+      "surface": "cli.ast.literal",
+      "byte_budget": 17,
+      "display_width": 17,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.112"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "628b3dc4ddbf4f05",
+      "source": "Photosynthesizing",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-DEFAULT",
+      "surface": "cli.ast.literal",
+      "byte_budget": 17,
+      "display_width": 17,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.112"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a20d12c5e9c428c3",
+      "source": "Thinking",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-DEFAULT",
+      "surface": "cli.ast.literal",
+      "byte_budget": 8,
+      "display_width": 8,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.112"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ec7f3b961af49cfe",
+      "source": "auto-accept edits",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-DEFAULT",
+      "surface": "cli.ast.literal",
+      "byte_budget": 17,
+      "display_width": 17,
+      "placeholders": [],
+      "seen_in": [
+        "cli@2.1.112"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    }
+  ]
+}

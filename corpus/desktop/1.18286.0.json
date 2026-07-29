@@ -1,0 +1,7436 @@
+{
+  "format_version": "1.0.0",
+  "target": "desktop",
+  "version": "1.18286.0",
+  "generated_at": "2026-07-29T02:55:05Z",
+  "units": [
+    {
+      "id": "00513c864cc6ab64",
+      "source": "Your sign-in won't be saved on this device. Install and unlock a system keyring (such as {keyringName}), then restart the app.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 126,
+      "display_width": 126,
+      "placeholders": [
+        "{keyringName}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "0072e6b934945d5b",
+      "source": "Design",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 6,
+      "display_width": 6,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "0176044bbfedd445",
+      "source": "Could not load app settings",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 27,
+      "display_width": 27,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "035e1f1df86febef",
+      "source": "Cowork requires Windows 10 build 2004 or later. Update your operating system to use this feature.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 97,
+      "display_width": 97,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "037a01002441b680",
+      "source": "Cowork requires macOS 14.0 (Sonoma) or later. Update your operating system to use this feature.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 95,
+      "display_width": 95,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "03b258a64d1a22a5",
+      "source": "Always allow {protocol} links from artifacts",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 44,
+      "display_width": 44,
+      "placeholders": [
+        "{protocol}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "04c65e10ba01074b",
+      "source": "Claude crashed repeatedly. Try restarting the app, or disable hardware acceleration in Settings.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 96,
+      "display_width": 96,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "04dfac3671b494ad",
+      "source": "Disconnected",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 12,
+      "display_width": 12,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "06070b43c15cafca",
+      "source": "Error deleting VM bundle",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 24,
+      "display_width": 24,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "063cb3dc6984cacf",
+      "source": "Enable Developer Mode",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 21,
+      "display_width": 21,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "0832f60a5afed2f6",
+      "source": "Open Quick Entry",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 16,
+      "display_width": 16,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "0b12ba39ab4d0851",
+      "source": "What is this?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 13,
+      "display_width": 13,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "0b1cb5638f09d325",
+      "source": "Changes you made may not be saved.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 34,
+      "display_width": 34,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "0bfe9783c1adfd74",
+      "source": "Ownership fix failed",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 20,
+      "display_width": 20,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "0c469f666c929409",
+      "source": "Extra usage · {used} of {limit}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 32,
+      "display_width": 31,
+      "placeholders": [
+        "{used}",
+        "{limit}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "0d98788d947046f6",
+      "source": "Plan usage · {tier}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 20,
+      "display_width": 19,
+      "placeholders": [
+        "{tier}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "0e91610117029a62",
+      "source": "Refresh",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 7,
+      "display_width": 7,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "0ef8db8c83b55c26",
+      "source": "{s}s",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [
+        "{s}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "0f72a0c0e1ed2204",
+      "source": "Submit Feedback - Claude",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 24,
+      "display_width": 24,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "0fe0c95373741388",
+      "source": "Restart Now",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 11,
+      "display_width": 11,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "11cab17a1ede7d24",
+      "source": "Open MCP Log File",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 17,
+      "display_width": 17,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "11dde17d6c3e2098",
+      "source": "Unlimited",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 9,
+      "display_width": 9,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "12967b8601accff1",
+      "source": "The extension could not be previewed due to the following error. Please ensure the DXT file is valid and try again. {errorMessage}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 130,
+      "display_width": 130,
+      "placeholders": [
+        "{errorMessage}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "12f67f8539c46701",
+      "source": "Availability",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 12,
+      "display_width": 12,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "1360281e08cf6158",
+      "source": "Or, you can turn off Claude's dictation feature to avoid seeing this message when you press your hotkey.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 104,
+      "display_width": 104,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "1387f598d16196fe",
+      "source": "This will delete and re-download your workspace. Your existing session data will be preserved.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 94,
+      "display_width": 94,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "13b7f3cdf8be7dfc",
+      "source": "Couldn't open that session. Its transcript may have been removed.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 65,
+      "display_width": 65,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "14313adc983d1e03",
+      "source": "Usage image copied to clipboard",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 31,
+      "display_width": 31,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "1445799c033a2d17",
+      "source": "Learn more",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 10,
+      "display_width": 10,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "144f0e5ca031e40c",
+      "source": "Weekly · all models",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 20,
+      "display_width": 19,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "145eb078987f9a53",
+      "source": "The application will now restart.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 33,
+      "display_width": 33,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "15037c6214a2306b",
+      "source": "Failed to open skill file.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 26,
+      "display_width": 26,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "1509f561f2416598",
+      "source": "Save",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "157d0563494354d1",
+      "source": "Choose your Buddy",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 17,
+      "display_width": 17,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "161b1c7f3c65f7d0",
+      "source": "The BLE API is only available when the desktop app is in developer mode. It's intended for makers and developers and isn't an officially supported product feature.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 163,
+      "display_width": 163,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "16ae59a6049e45b4",
+      "source": "Load Staging Claude.ai",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 22,
+      "display_width": 22,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "16c08e5f05c801b3",
+      "source": "This will stop any running VM sessions, delete all local agent mode session data, and restart the app. This action cannot be undone. Are you sure you want to continue?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 167,
+      "display_width": 167,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "1709305c9fa966d1",
+      "source": "Level",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 5,
+      "display_width": 5,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "17ddcb5db1d0b83f",
+      "source": "Login to Claude in Chrome",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 25,
+      "display_width": 25,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "1848bbb116971f4b",
+      "source": "The extension {extensionName} {organizationText} has an update available.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 73,
+      "display_width": 73,
+      "placeholders": [
+        "{extensionName}",
+        "{organizationText}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "19734a1b58cabc22",
+      "source": "Window",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 6,
+      "display_width": 6,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "19766ed6ccb2f4a3",
+      "source": "Cancel",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 6,
+      "display_width": 6,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "19fea13e4cbd853b",
+      "source": "Trust {cwd} and start a code session?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 37,
+      "display_width": 37,
+      "placeholders": [
+        "{cwd}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "1a03bd2fd107c453",
+      "source": "Debug",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 5,
+      "display_width": 5,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "1a2303ede07493ac",
+      "source": "Connect",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 7,
+      "display_width": 7,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "1a32b951458ede0b",
+      "source": "{extensionDetails} These extensions will remain installed and can be re-enabled if you switch to an organization where they are allowed. You can also delete them from Settings.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 176,
+      "display_width": 176,
+      "placeholders": [
+        "{extensionDetails}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "1a6eb57d1b913685",
+      "source": "Don't ask again",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 15,
+      "display_width": 15,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "1c4a2c2a3f359320",
+      "source": "Show Main Window",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 16,
+      "display_width": 16,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "1c5ea2f7ed52a91c",
+      "source": "Pairing code",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 12,
+      "display_width": 12,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "1dcb6582f8237635",
+      "source": "Claude is not ready to handle skill files. Try again after the app has fully loaded.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 84,
+      "display_width": 84,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "1dfc4eb3f5a88620",
+      "source": "Claude doesn't have permission to use virtualization (/dev/kvm). Add your user to the 'kvm' group, then log out and back in.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 124,
+      "display_width": 124,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "1f435536d8abbabd",
+      "source": "Look Up",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 7,
+      "display_width": 7,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "1f45f02561f41db9",
+      "source": "Cut",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 3,
+      "display_width": 3,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "20d2826daf19c812",
+      "source": "Show Logs in File Manager",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 25,
+      "display_width": 25,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "21724aa1ef79f0e7",
+      "source": "Couldn't save {filename}.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 25,
+      "display_width": 25,
+      "placeholders": [
+        "{filename}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "22965568d22a14ee",
+      "source": "Connected",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 9,
+      "display_width": 9,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "22b693223fcb3be3",
+      "source": "Charging",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 8,
+      "display_width": 8,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "24649ee0c7a92fd8",
+      "source": "Zoom Out",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 8,
+      "display_width": 8,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "247b9582c928ac17",
+      "source": "Trust {directory} and start a Cowork task?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 42,
+      "display_width": 42,
+      "placeholders": [
+        "{directory}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "25cf3c4b2a9b6385",
+      "source": "Install Unpacked Extension...",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 29,
+      "display_width": 29,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "26d04fad786b1e3a",
+      "source": "5-hour limit",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 12,
+      "display_width": 12,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "26fa4889e74cb19f",
+      "source": "Claude Help",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 11,
+      "display_width": 11,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "27041ad7d939f9f0",
+      "source": "Zoom In (indie cooler version)",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 30,
+      "display_width": 30,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "27c2ccd962c2b8dc",
+      "source": "Unknown error",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 13,
+      "display_width": 13,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "27ec717bcf7498fa",
+      "source": "The application must be restarted for this change to take effect.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 65,
+      "display_width": 65,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "290a6957cef1f12c",
+      "source": "Open link in another app?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 25,
+      "display_width": 25,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "291fdfc2ac72b71d",
+      "source": "Leave Design?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 13,
+      "display_width": 13,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "29b15afa1983087d",
+      "source": "Allow Claude to use {toolName}?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 31,
+      "display_width": 31,
+      "placeholders": [
+        "{toolName}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "29ef2416aa6a7858",
+      "source": "Cowork is not currently supported on {platform}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 47,
+      "display_width": 47,
+      "placeholders": [
+        "{platform}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "2afabd6918c69a1e",
+      "source": "Link couldn't be opened",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 23,
+      "display_width": 23,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "2bf92030b9a0e8ae",
+      "source": "Updates disabled by admin",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 25,
+      "display_width": 25,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "2c75289417f664ca",
+      "source": "Cowork Disk Cleanup",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 19,
+      "display_width": 19,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "2c92e2d8b664754d",
+      "source": "Couldn't open that session. Sign in to the desktop app and try again.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 69,
+      "display_width": 69,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "2e4aafefb7343272",
+      "source": "Delete VM Bundle and Restart",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 28,
+      "display_width": 28,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "2ed68074f58bec49",
+      "source": "View Process Logs",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 17,
+      "display_width": 17,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "2f0c62f19de444c9",
+      "source": "Pair with {name}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 16,
+      "display_width": 16,
+      "placeholders": [
+        "{name}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "303b073647e30dab",
+      "source": "Claude runs in the Notification Area",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 36,
+      "display_width": 36,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "318bd91929941a23",
+      "source": "Select Extension Folder",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 23,
+      "display_width": 23,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "324b134f57c70c72",
+      "source": "Preview",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 7,
+      "display_width": 7,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "325868859fcce102",
+      "source": "Pick a folder to send to your device",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 36,
+      "display_width": 36,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "32650b9d6d530622",
+      "source": "Show Cowork Session Data in Explorer",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 36,
+      "display_width": 36,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "32bbc10fb628ced9",
+      "source": "Usage credits · {used}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 23,
+      "display_width": 22,
+      "placeholders": [
+        "{used}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "32f49f4e239d01e4",
+      "source": "Enable Developer Mode?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 22,
+      "display_width": 22,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "32fd144c1f4b399d",
+      "source": "Close Window",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 12,
+      "display_width": 12,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "3304685f25d8ab92",
+      "source": "MCP Configuration Reload Failed",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 31,
+      "display_width": 31,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "336c2129e234f83e",
+      "source": "Settings...",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "FRAGILE",
+      "risk_reason": "R-IDENTIFIER",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 11,
+      "display_width": 11,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "337e3d72c6156fb0",
+      "source": "The extension directory has been disabled on your computer.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 59,
+      "display_width": 59,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "340f463033e0fd5d",
+      "source": "Code",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "34cbf144ee079017",
+      "source": "Fix required for auto-updates",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 29,
+      "display_width": 29,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "34d653dc911ca01b",
+      "source": "Choose a folder inside: {roots}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 31,
+      "display_width": 31,
+      "placeholders": [
+        "{roots}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "365156e1931d583e",
+      "source": "Skill file too large",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 20,
+      "display_width": 20,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "36962434c78a23c4",
+      "source": "Checking for Updates...",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 23,
+      "display_width": 23,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "373789e83f717285",
+      "source": "Copied version to clipboard",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 27,
+      "display_width": 27,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "37aaf42a136218a8",
+      "source": "Some MCP servers could not be loaded",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 36,
+      "display_width": 36,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "37c2bae8b6a537ac",
+      "source": "Delete VM Sessions and Restart",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 30,
+      "display_width": 30,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "3824c2b35ac49600",
+      "source": "Cowork requires hardware virtualization (KVM), which isn't available on this device. Enable virtualization in your firmware settings to use this feature.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 153,
+      "display_width": 153,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "389c00d1fafc7bce",
+      "source": "Select extension",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 16,
+      "display_width": 16,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "3aedd1c3011ae83d",
+      "source": "This device requested an unencrypted connection. Data is being sent unencrypted, meaning that other devices close by can easily listen in.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 138,
+      "display_width": 138,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "3b3b5918ac14c738",
+      "source": "Cowork requires Claude Desktop be installed with our modern installer",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 69,
+      "display_width": 69,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "3b77ad7b4a332149",
+      "source": "Close find bar",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 14,
+      "display_width": 14,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "3b92f1d72d1fd84a",
+      "source": "Failed to login, it may have been cancelled",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 43,
+      "display_width": 43,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "3bb3171854adc846",
+      "source": "Tap to pair:",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 12,
+      "display_width": 12,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "3bbc074dcd26bafe",
+      "source": "Organization Extension Update Available",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 39,
+      "display_width": 39,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "3c72d76490cb7e4a",
+      "source": "Claude is still working",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 23,
+      "display_width": 23,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "3d7f69738780dae2",
+      "source": "Allow Claude to cowork in {path}?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 33,
+      "display_width": 33,
+      "placeholders": [
+        "{path}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "3e50bf78d7244e14",
+      "source": "Cowork isn't available in this build of Claude. Reinstall Claude to use this feature.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 85,
+      "display_width": 85,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "3e7d010674d03c70",
+      "source": "Reload This Page",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 16,
+      "display_width": 16,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "3f940108cb1ecd9c",
+      "source": "Open Settings",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 13,
+      "display_width": 13,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "3fb7b39416f1d067",
+      "source": "Developer",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 9,
+      "display_width": 9,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "3fbe5ed156f14993",
+      "source": "Enterprise",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 10,
+      "display_width": 10,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "3fda50cf29045a19",
+      "source": "Could not open the specified folder.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 36,
+      "display_width": 36,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "407db509e2ba0b07",
+      "source": "Do you want to install {extensionName}?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 39,
+      "display_width": 39,
+      "placeholders": [
+        "{extensionName}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "41a8a1a0ff73a151",
+      "source": "Clear Cache and Restart",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 23,
+      "display_width": 23,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "4216182c851ccd3a",
+      "source": "Version {currentVersion} → {newVersion} Would you like to install this update?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 80,
+      "display_width": 78,
+      "placeholders": [
+        "{currentVersion}",
+        "{newVersion}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "44597d0fa079b5c9",
+      "source": "Show Logs in Finder",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 19,
+      "display_width": 19,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "44c375ca8c5dfc34",
+      "source": "Usage: {pct}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 12,
+      "display_width": 12,
+      "placeholders": [
+        "{pct}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "464c4ffd019e1e96",
+      "source": "Edit",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "4664827f8e890192",
+      "source": "Progress",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 8,
+      "display_width": 8,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "46e24be0ad841117",
+      "source": "Check your network connection",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 29,
+      "display_width": 29,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "477e2bb0cf271368",
+      "source": "Checking virtualization support…",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 34,
+      "display_width": 32,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "48845bff334a50a5",
+      "source": "Dismiss",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 7,
+      "display_width": 7,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "49f28387d43cac80",
+      "source": "Quit anyway",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 11,
+      "display_width": 11,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "4c12fe37a1fd9a2e",
+      "source": "This will stop any running VM sessions, delete the VM bundle files, and restart the app. The bundle will be re-downloaded the next time you use the VM. Are you sure you want to continue?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 186,
+      "display_width": 186,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "4cacc7c47a9f3438",
+      "source": "This feature requires macOS 13.0 or higher",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 42,
+      "display_width": 42,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "4e35b8c78975c388",
+      "source": "Show Logs in Explorer",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 21,
+      "display_width": 21,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "4e576928d09fd132",
+      "source": "This will delete all application data including settings, cache, and login information. The application will restart after the reset. Are you sure you want to continue?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 168,
+      "display_width": 168,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "4f57f0819bf8d3ef",
+      "source": "This removes caches and temporary files from Cowork sessions that aren't currently running. Files in session workspaces are not affected.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 137,
+      "display_width": 137,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "50009ce1da4d15e1",
+      "source": "File",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "50b3e1979943b768",
+      "source": "Free Up Cowork Disk Space…",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 28,
+      "display_width": 26,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "51394cb054271ff9",
+      "source": "We failed to open a link using your system's default application for this type of link. This is often caused by the default app misbehaving or your operating system refusing the link itself. {url}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 196,
+      "display_width": 196,
+      "placeholders": [
+        "{url}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "515420a376af13c5",
+      "source": "About...",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "FRAGILE",
+      "risk_reason": "R-IDENTIFIER",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 8,
+      "display_width": 8,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "51865ec52c99e123",
+      "source": "Claude will have read and write access to files in {path}.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 58,
+      "display_width": 58,
+      "placeholders": [
+        "{path}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "5194812b3d90ab7b",
+      "source": "Cowork requires virtualization. Your Mac does not support virtualization. If you are currently running macOS inside a virtual machine (like Parallels), you might need to enable a feature called 'nested virtualization'.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 218,
+      "display_width": 218,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "51ba6a1bd01f3b03",
+      "source": "This feature requires macOS 14.0 or higher",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 42,
+      "display_width": 42,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "51fbe1dc8a7319b7",
+      "source": "Sign in again",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 13,
+      "display_width": 13,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "5342e09f2729fbc6",
+      "source": "Enable",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 6,
+      "display_width": 6,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "5358a5ac01a53e76",
+      "source": "Advertise a name starting with <code>Claude</code> over the Nordic UART Service. Everything on the wire is UTF-8 JSON—one object per line, terminated with <code>\\n</code>.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 173,
+      "display_width": 171,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "536f22183cac6d42",
+      "source": "Name saved",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 10,
+      "display_width": 10,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "53e7bec205934673",
+      "source": "Skip This Update",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 16,
+      "display_width": 16,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "54941d7bc64ebf11",
+      "source": "Enable Cowork VM Debug Logging",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 30,
+      "display_width": 30,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "54a0e8c17ebb21a1",
+      "source": "Error",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 5,
+      "display_width": 5,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "565339bc4d33d728",
+      "source": "OK",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "FRAGILE",
+      "risk_reason": "R-IDENTIFIER",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 2,
+      "display_width": 2,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "565564726f750bd2",
+      "source": "Find in page",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 12,
+      "display_width": 12,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "568b126ca48ce4d9",
+      "source": "Reset complete",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 14,
+      "display_width": 14,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "569ca49f4aaf7846",
+      "source": "Install",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 7,
+      "display_width": 7,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "5748d415ec30ad58",
+      "source": "{mA}mA",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 6,
+      "display_width": 6,
+      "placeholders": [
+        "{mA}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "587f0c0c04082212",
+      "source": "Error accessing logs",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 20,
+      "display_width": 20,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "5975cf1bba432391",
+      "source": "preview",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 7,
+      "display_width": 7,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "5985039f106df054",
+      "source": "Team",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "5a7f7b5406e824d0",
+      "source": "Couldn't open that session. Check your network connection and try again.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 72,
+      "display_width": 72,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "5a982cf9dc11b4ec",
+      "source": "Zoom In",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 7,
+      "display_width": 7,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "5ae200f91c64da48",
+      "source": "Update Available",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 16,
+      "display_width": 16,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "5caf2bd8b263d5aa",
+      "source": "This will open {appName} to compose a message to {email}.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 57,
+      "display_width": 57,
+      "placeholders": [
+        "{appName}",
+        "{email}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "5ce44dd77dae789f",
+      "source": "Uploading…",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 12,
+      "display_width": 10,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "5d0e756cdd1a4e56",
+      "source": "The ownership fix didn't complete. Auto-updates may not work until this is resolved. You can try again next time.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 113,
+      "display_width": 113,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "5d2f413682377cf0",
+      "source": "This allows Claude to work with websites directly in your browser. Only grant \"always allow\" for sites you trust.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 113,
+      "display_width": 113,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "5e0716dcc27fa901",
+      "source": "Restart Required",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 16,
+      "display_width": 16,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "5eabf967125401bb",
+      "source": "Open Extensions Folder...",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 25,
+      "display_width": 25,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "607c30aafae97e3e",
+      "source": "{product} grant",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 15,
+      "display_width": 15,
+      "placeholders": [
+        "{product}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "61a9b1afd1aef17d",
+      "source": "Attach logs",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 11,
+      "display_width": 11,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "61f0acff1735aac4",
+      "source": "USB",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "FRAGILE",
+      "risk_reason": "R-IDENTIFIER",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 3,
+      "display_width": 3,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "63f07faa18d9256f",
+      "source": "Your administrator has disabled adding folders. Contact your IT administrator if you need access.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 97,
+      "display_width": 97,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "650917c85ce84071",
+      "source": "Clean Up",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 8,
+      "display_width": 8,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "652a91364aa872b0",
+      "source": "Open App Config File...",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 23,
+      "display_width": 23,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "664083b406852ff4",
+      "source": "Extension installation failed",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 29,
+      "display_width": 29,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "664d6cdf0494d6e5",
+      "source": "Find Next",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 9,
+      "display_width": 9,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "667f72e7f2e123c3",
+      "source": "The extension could not be installed due to the following error: {errorMessage}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 79,
+      "display_width": 79,
+      "placeholders": [
+        "{errorMessage}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "6725e7bbcd28f3a8",
+      "source": "System",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 6,
+      "display_width": 6,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "677c6cad841985f4",
+      "source": "Some sessions were skipped because they are currently running.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 62,
+      "display_width": 62,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "6782c38042717e47",
+      "source": "Learn Spelling",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 14,
+      "display_width": 14,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "67adad6c813e84bd",
+      "source": "Would you like to submit your issue with debug logs? Submitting your issue with logs will send system information to Anthropic for debugging and future improvements to our models.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 179,
+      "display_width": 179,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "67b6822636ead166",
+      "source": "Connected · Encrypted",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 22,
+      "display_width": 21,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "6b72c90950bda90a",
+      "source": "Build your own device",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 21,
+      "display_width": 21,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "6b983a81e5e8099e",
+      "source": "Restart",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 7,
+      "display_width": 7,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "6ceb5486f7ed4f47",
+      "source": "Open Chrome",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 11,
+      "display_width": 11,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "6d9075e17cdc8804",
+      "source": "A new version is available. It will be downloaded and installed automatically.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 78,
+      "display_width": 78,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "6f3e551c4c7fdc49",
+      "source": "None found. Make sure yours is on and nearby.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 45,
+      "display_width": 45,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "712b390c7ab006db",
+      "source": "Cowork isn't running, so there's nothing to clean up right now.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 63,
+      "display_width": 63,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "7149d7dd29623b94",
+      "source": "Version {version}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 17,
+      "display_width": 17,
+      "placeholders": [
+        "{version}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "71a46906432278ef",
+      "source": "Folder not allowed",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 18,
+      "display_width": 18,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "71c8e9dcbe4236a1",
+      "source": "Caps Lock",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 9,
+      "display_width": 9,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "71f8de93debb743a",
+      "source": "Open Hardware Buddy…",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 22,
+      "display_width": 20,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "73016da26d78aa40",
+      "source": "Can't read folder, or it's empty or too large",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 45,
+      "display_width": 45,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "730c1c757cd85c45",
+      "source": "That folder overlaps a protected location ({denied}) and can’t be used here. Choose a different folder.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 105,
+      "display_width": 103,
+      "placeholders": [
+        "{denied}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "733488318f731def",
+      "source": "Claude for macOS, Windows, and Linux can connect Claude Cowork and Claude Code to maker devices over BLE, so developers can build hardware that displays permission prompts, recent messages, and other interactions.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 213,
+      "display_width": 213,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "7337510487d015e1",
+      "source": "App Features",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 12,
+      "display_width": 12,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "73b6e48a1b552d11",
+      "source": "Later",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 5,
+      "display_width": 5,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "74273989b0966e23",
+      "source": "Redo",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "74be697a539df5d3",
+      "source": "This will open your default email application to compose a message to {email}.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 78,
+      "display_width": 78,
+      "placeholders": [
+        "{email}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "762cceed5f76e4ac",
+      "source": "Get Support",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 11,
+      "display_width": 11,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "76900f1bfd16c8d4",
+      "source": "Back",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "770e6db4e4d14c76",
+      "source": "This version of Cowork doesn't support disk cleanup yet. Restart the app and try again.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 87,
+      "display_width": 87,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "77686c8195b06a02",
+      "source": "Network (UNC) paths are not supported here.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 43,
+      "display_width": 43,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "7959684e844acfed",
+      "source": "Choose Data Folder",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 18,
+      "display_width": 18,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "7a04083baf8daa20",
+      "source": "Settings…",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 11,
+      "display_width": 9,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "7a2797511f2dac07",
+      "source": "Do not attach logs",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 18,
+      "display_width": 18,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "7ae3c39c950e2606",
+      "source": "Could not load developer settings",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 33,
+      "display_width": 33,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "7bf94defd1c9bac4",
+      "source": "Open Chrome Web Store",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 21,
+      "display_width": 21,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "7c4c06570e8ef197",
+      "source": "Computer use",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 12,
+      "display_width": 12,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "7d9eb7acb13e2462",
+      "source": "Close",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 5,
+      "display_width": 5,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "7e08c50fb774dd67",
+      "source": "Install Update",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 14,
+      "display_width": 14,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "81b9121f69c8900f",
+      "source": "Extension Preview Failed",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 24,
+      "display_width": 24,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "822b2ae4542bc74b",
+      "source": "Find",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "825e5abd0762be6e",
+      "source": "Next match",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 10,
+      "display_width": 10,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "830a1041dac7dbdd",
+      "source": "Move to Applications",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 20,
+      "display_width": 20,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "859f902e947e338c",
+      "source": "Inspect Element",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 15,
+      "display_width": 15,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "85ae05b7ebfd9f17",
+      "source": "No space could be freed. Caches and temporary files are already clean.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 70,
+      "display_width": 70,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "867a34091726b9e8",
+      "source": "There was an error reading or parsing claude_desktop_config.json: {error}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 73,
+      "display_width": 73,
+      "placeholders": [
+        "{error}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "873a765e14004d20",
+      "source": "Weekly · {product}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 19,
+      "display_width": 18,
+      "placeholders": [
+        "{product}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "87b42e40c2a290e0",
+      "source": "Approved",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 8,
+      "display_width": 8,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "87bd8c5f46cb4e27",
+      "source": "Device did not respond",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 22,
+      "display_width": 22,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "87c4108b8fc42807",
+      "source": "Prototypes",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 10,
+      "display_width": 10,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "8965cdc71634bfb3",
+      "source": "Velocity",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 8,
+      "display_width": 8,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "8a2e5a1173bf352f",
+      "source": "Connection is unencrypted",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 25,
+      "display_width": 25,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "8bf825e1b92e3eaf",
+      "source": "Another copy of Claude is already running",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 41,
+      "display_width": 41,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "8c47e11f88a46ddb",
+      "source": "Send to Device",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 14,
+      "display_width": 14,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "8c488140523ff575",
+      "source": "Load Remote Claude.ai",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 21,
+      "display_width": 21,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "8d0bee69dc5ff31c",
+      "source": "Skill file is too large. Maximum size is 30 MB.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 47,
+      "display_width": 47,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "9093a9f7f4b888f2",
+      "source": "Reload MCP Configuration",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 24,
+      "display_width": 24,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "937224c5399a1263",
+      "source": "Enter the 6-digit code shown on the device's screen to connect.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 63,
+      "display_width": 63,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "94f9a6da6b79a3a7",
+      "source": "Cache cleared successfully",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 26,
+      "display_width": 26,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "957b0b874524d09a",
+      "source": "Pro",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 3,
+      "display_width": 3,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "961136f9207a19be",
+      "source": "No response",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 11,
+      "display_width": 11,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "96a306870a7d3921",
+      "source": "Reset Application Data",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 22,
+      "display_width": 22,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "97b9f1ea1d319a68",
+      "source": "Your network redirected this request to {host}. Contact your IT administrator.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 78,
+      "display_width": 78,
+      "placeholders": [
+        "{host}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "97c0f30193bdfc1f",
+      "source": "You are not logged in. Please log in to access the extensions directory.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "DANGER",
+      "risk_reason": "R-SYSPROMPT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 72,
+      "display_width": 72,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "97f5f5f6c4b12ffc",
+      "source": "Set up computer use",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 19,
+      "display_width": 19,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "98939360a9f79110",
+      "source": "The desktop apps send a heartbeat snapshot whenever something changes, plus a keepalive every 10 seconds:",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 105,
+      "display_width": 105,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "989da04b0aaaa57f",
+      "source": "Pair",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "98b53a55c5af37e3",
+      "source": "Error Opening Folder",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 20,
+      "display_width": 20,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "994d3a17fda3a706",
+      "source": "Open Extension Settings Folder...",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 33,
+      "display_width": 33,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "9a5fe10eb68db7f9",
+      "source": "Each completed turn also fires a one-shot event containing the raw SDK content array—text blocks, tool calls, and any other content from the message. Events that serialize larger than 4KB are dropped.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 202,
+      "display_width": 200,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "9a877d409df77459",
+      "source": "Skill file not found",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 20,
+      "display_width": 20,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "9b9000b8bc6ac639",
+      "source": "This extension requires a valid signature",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 41,
+      "display_width": 41,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "9cadbb0d9123ac63",
+      "source": "Claude needs microphone permission",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 34,
+      "display_width": 34,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "9d63fd3063245205",
+      "source": "Claude will have read and write access to this folder. It will also be trusted in the Code tab.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 95,
+      "display_width": 95,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "9da4add0113542e8",
+      "source": "Error cleaning up Cowork disk space",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 35,
+      "display_width": 35,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "9dafdcc8cb95dbfc",
+      "source": "Sign back in to Claude in Chrome",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 32,
+      "display_width": 32,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "9f42816794b60715",
+      "source": "{pct}%",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 6,
+      "display_width": 6,
+      "placeholders": [
+        "{pct}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a00a83a4cf71e244",
+      "source": "Record Net Log (30s)",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 20,
+      "display_width": 20,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a05b7d5425b9e8e9",
+      "source": "Couldn't open that folder. Check the path and try again.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 56,
+      "display_width": 56,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a09cffc137609e0e",
+      "source": "Failed to preview extension.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 28,
+      "display_width": 28,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a0e63d7c7125d29a",
+      "source": "Not now",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 7,
+      "display_width": 7,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a1a5936d3b0f8a69",
+      "source": "Max",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 3,
+      "display_width": 3,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a2846aff20beaa9a",
+      "source": "Last update attempt failed...",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 29,
+      "display_width": 29,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a2d39bd8275b5cb3",
+      "source": "Error clearing cache",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 20,
+      "display_width": 20,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a3e5547d202fdb7a",
+      "source": "Connect maker devices to Claude",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 31,
+      "display_width": 31,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a456be9c2230ced2",
+      "source": "The Chrome extension's session expired. Open the Claude extension in Chrome and sign in again, then retry.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 106,
+      "display_width": 106,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a4c0872a35d03e22",
+      "source": "Failed to preview extension",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 27,
+      "display_width": 27,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a5252bb86602ddb6",
+      "source": "Generate Diagnostic Report",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 26,
+      "display_width": 26,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a611e47d1736819e",
+      "source": "Open File…",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 12,
+      "display_width": 10,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a6b4705c688314f0",
+      "source": "Change…",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 9,
+      "display_width": 7,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a6bd489d95504499",
+      "source": "Forget",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 6,
+      "display_width": 6,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a751fd092fe2f24e",
+      "source": "In Bypass Permissions mode, Claude skips permission checks and takes actions and runs commands without asking for approval. This includes risky actions and actions that may result in prompt injections. This mode should only be used in isolated environments.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 257,
+      "display_width": 257,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a8283ade31856f71",
+      "source": "Undo",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a927cdbaab645cda",
+      "source": "Delete Cowork VM Bundle and Restart…",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 38,
+      "display_width": 36,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a9853984aed7724c",
+      "source": "Claude's installation appears to be corrupted. Reinstall Claude from claude.com/download to use this feature.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 109,
+      "display_width": 109,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a9aa6292ceda3e35",
+      "source": "Ask your IT administrator to enable the secureVmFeaturesEnabled setting in the Claude desktop configuration profile.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 116,
+      "display_width": 116,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "a9ae2603c6eea25c",
+      "source": "{pct} · resets {date}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 22,
+      "display_width": 21,
+      "placeholders": [
+        "{pct}",
+        "{date}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "aa5fa0c2748c12c3",
+      "source": "Claude Nest has been restricted from accessing the microphone by a system administrator",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 87,
+      "display_width": 87,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "aaab6f056dc6a09b",
+      "source": "Copy Image Address",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 18,
+      "display_width": 18,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ac9226dfbf087d7f",
+      "source": "Restart to update to {updateVersion}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 36,
+      "display_width": 36,
+      "placeholders": [
+        "{updateVersion}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ad105dfdccdbe9f0",
+      "source": "Install Extension...",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 20,
+      "display_width": 20,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "adaa6dbe74b2d5a1",
+      "source": "{skipped, plural, one {# folder was} other {# folders were}} skipped because it overlaps a protected location or is the home/root directory.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 140,
+      "display_width": 140,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ae23ddcc16cd2915",
+      "source": "Extension {extensionId} is blocked by a security blocklist: {reason}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 68,
+      "display_width": 68,
+      "placeholders": [
+        "{extensionId}",
+        "{reason}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "b06a55da7473bace",
+      "source": "No manifest.json found in extension file",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 40,
+      "display_width": 40,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "b06f096d73182c57",
+      "source": "Drop a data folder here{br}or click to choose",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 45,
+      "display_width": 45,
+      "placeholders": [
+        "{br}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "b0949edf894de3a8",
+      "source": "This desktop extension will be installed on your computer. In order to install this extension we need to fetch a few dependencies. This may take a few minutes.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 159,
+      "display_width": 159,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "b0f5bc4d99825348",
+      "source": "Add to dictionary",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 17,
+      "display_width": 17,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "b12925d6fb27e423",
+      "source": "Disk cleanup is currently disabled.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 35,
+      "display_width": 35,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "b26d1037f1c2da31",
+      "source": "Copy URL",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 8,
+      "display_width": 8,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "b3eb37acb66ba4bb",
+      "source": "Quit",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "b493c8ea24b2dfb5",
+      "source": "Your administrator has restricted which folders can be used here.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 65,
+      "display_width": 65,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "b4b7ed9a492916bb",
+      "source": "Enable the secureVmFeaturesEnabled preference to use this feature.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 66,
+      "display_width": 66,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "b4e81e0f9166bfd9",
+      "source": "Install and restart Chrome",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 26,
+      "display_width": 26,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "b650904c4161f8bc",
+      "source": "Allowed locations: {roots}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 26,
+      "display_width": 26,
+      "placeholders": [
+        "{roots}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "b6b345a8059f33be",
+      "source": "Your settings file was corrupted and has been reset to defaults. You may need to reconfigure your preferences.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 110,
+      "display_width": 110,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "b798d72d595ea970",
+      "source": "Open Documentation",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 18,
+      "display_width": 18,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "b79cac926e0b2e34",
+      "source": "Help",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "b7cc155809cb4666",
+      "source": "Install Extension?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 18,
+      "display_width": 18,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "b9a7b3f9a4f96e2a",
+      "source": "No buddy paired",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 15,
+      "display_width": 15,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ba2bdb57f2e63a9f",
+      "source": "There was an error reading or parsing developer_settings.json: {error}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 70,
+      "display_width": 70,
+      "placeholders": [
+        "{error}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ba357c88ca3b0c55",
+      "source": "The repository includes full details on building and connecting your own devices. Here's the short version.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 107,
+      "display_width": 107,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "bb30cbe2f9b87595",
+      "source": "Heap",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "bb92b339346b1667",
+      "source": "Error deleting VM sessions",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 26,
+      "display_width": 26,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "bbe12a9ccfb93dba",
+      "source": "Cowork requires QEMU. Install it with ''{installCommand}'', then restart Claude.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 80,
+      "display_width": 80,
+      "placeholders": [
+        "{installCommand}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "bc47fa363010dda2",
+      "source": "Claude Code for Desktop has been disabled by your organization administrator",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 76,
+      "display_width": 76,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "bcc0952e357a4cba",
+      "source": "Claude runs in the background even when you close the window. Click the Claude icon in the tray to reopen the app, or right-click to quit.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 138,
+      "display_width": 138,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "bdc090ec61e3fcfc",
+      "source": "Reload",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 6,
+      "display_width": 6,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "bdc11946a7d8103f",
+      "source": "What can I help you with today?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 31,
+      "display_width": 31,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "bddc17d5515e59e9",
+      "source": "Usage credits · {used} of {limit}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 34,
+      "display_width": 33,
+      "placeholders": [
+        "{used}",
+        "{limit}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "be41288500ddde6c",
+      "source": "Failed to reload MCP configuration. Please check the logs for more details.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 75,
+      "display_width": 75,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "be4cdcabe6a1b95f",
+      "source": "Submit feedback and reinstall workspace",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 39,
+      "display_width": 39,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "be6ee118f6ce86a8",
+      "source": "Downloading Update...",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 21,
+      "display_width": 21,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "be84fea7c5bfdbad",
+      "source": "Settings Reset",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 14,
+      "display_width": 14,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "bf0e5179cb962af6",
+      "source": "Find Previous",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 13,
+      "display_width": 13,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "bf21aa9bebe41ba6",
+      "source": "Copy Image",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 10,
+      "display_width": 10,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "bf7b91beb8dbfa88",
+      "source": "Choose Claude data folder",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 25,
+      "display_width": 25,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "c1a4a5e37628b9fe",
+      "source": "Extension preview failed",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 24,
+      "display_width": 24,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "c1f03f916610af5e",
+      "source": "The following entries in claude_desktop_config.json are not valid MCP server configurations and were skipped: {names}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 117,
+      "display_width": 117,
+      "placeholders": [
+        "{names}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "c372f825b04edac5",
+      "source": "Check for Updates…",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 20,
+      "display_width": 18,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "c39356b2b02c5cde",
+      "source": "Extensions Disabled",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 19,
+      "display_width": 19,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "c3af076f92c5ed8d",
+      "source": "Troubleshooting",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 15,
+      "display_width": 15,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "c47448401a02a3f4",
+      "source": "Show Cowork Session Data in File Manager",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 40,
+      "display_width": 40,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "c5770c196190f773",
+      "source": "You've used {key} to speak to Claude, but Claude needs microphone permission.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 77,
+      "display_width": 77,
+      "placeholders": [
+        "{key}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "c5fe615e8105c56b",
+      "source": "This app's file ownership is preventing auto-updates from working smoothly. Claude needs to fix the ownership, which requires administrator access. You'll be prompted for your fingerprint or password.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 200,
+      "display_width": 200,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "c630a782a9eb8569",
+      "source": "Reinstall",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 9,
+      "display_width": 9,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "c77ecb20e87ceeb1",
+      "source": "New Conversation",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 16,
+      "display_width": 16,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "c7e3398e142aabae",
+      "source": "Open this conversation in the Claude desktop app to finish setup.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 65,
+      "display_width": 65,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "c7f937836f5d82d5",
+      "source": "Choose",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 6,
+      "display_width": 6,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "c808cd9b56ebb64c",
+      "source": "No Update Available",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 19,
+      "display_width": 19,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "c81a701e3332433f",
+      "source": "Your administrator has restricted which folders can be used here. {skipped, plural, one {# folder was} other {# folders were}} skipped.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 135,
+      "display_width": 135,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "c827040143d51e47",
+      "source": "Copy Link Address",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 17,
+      "display_width": 17,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "c976da096e6e5bb2",
+      "source": "Delete Cowork VM Sessions and Restart…",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 40,
+      "display_width": 38,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "cb0f511e9e8c853f",
+      "source": "Cannot open skill",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 17,
+      "display_width": 17,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "cb4a41f8c03e782b",
+      "source": "Cowork requires the vhost_vsock kernel module. Load it with 'sudo modprobe vhost_vsock', then restart Claude.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 109,
+      "display_width": 109,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "cbe894d5b2d49de8",
+      "source": "Open Link in Browser",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 20,
+      "display_width": 20,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ccb4c324f516c633",
+      "source": "Not Now",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 7,
+      "display_width": 7,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "cedfe2a9624c1f30",
+      "source": "Make sure you are signed in to Claude in Chrome with the same account as Claude Desktop.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 88,
+      "display_width": 88,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "d1097e8fb34c8a64",
+      "source": "Error resetting application data",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 32,
+      "display_width": 32,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "d14975fa752fdd6a",
+      "source": "Freed {amount} of disk space.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 29,
+      "display_width": 29,
+      "placeholders": [
+        "{amount}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "d1677a3280a3cdc9",
+      "source": "Allow Claude to control {apps}?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 31,
+      "display_width": 31,
+      "placeholders": [
+        "{apps}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "d17d84a604994b72",
+      "source": "Exit",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "d1ec69e64b9609d0",
+      "source": "Select All",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 10,
+      "display_width": 10,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "d4914222380c29df",
+      "source": "Fix ownership",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 13,
+      "display_width": 13,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "d5872e48be2b6adc",
+      "source": "Claude is working in {count, plural, one {# session} other {# sessions}}. Quitting now will interrupt that work.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 112,
+      "display_width": 112,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "d63ab4711473b039",
+      "source": "Uptime",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 6,
+      "display_width": 6,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "d6a5a1e72a1944e4",
+      "source": "Reinstall workspace",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 19,
+      "display_width": 19,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "d7505853fd690a8f",
+      "source": "Open MCP Log File...",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 20,
+      "display_width": 20,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "d83d588df885ebff",
+      "source": "Claude will have read and write access to this folder.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 54,
+      "display_width": 54,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "d8d3d250788e1f61",
+      "source": "When <code>prompt</code> is present, your device can return a response:",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 71,
+      "display_width": 71,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "d9fda499a52d499b",
+      "source": "Skill file error",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 16,
+      "display_width": 16,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "da0abd27ffa912a8",
+      "source": "Please quit the other copy of Claude and try again.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 51,
+      "display_width": 51,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "da70168b378a0d1d",
+      "source": "Reset App Data…",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 17,
+      "display_width": 15,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "daa2f8c3fc897cc7",
+      "source": "Previous match",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 14,
+      "display_width": 14,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "dad2b66f5c8b102c",
+      "source": "Don't Enable",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 12,
+      "display_width": 12,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "daee7606b339f3c3",
+      "source": "Reset",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 5,
+      "display_width": 5,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "dbf362d4f210c780",
+      "source": "Copy link",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 9,
+      "display_width": 9,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "dc173bc44b2567d5",
+      "source": "Skip feedback and reinstall",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 27,
+      "display_width": 27,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "dcc839a4015c4b7d",
+      "source": "View",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "dcd1d5223f73b3a9",
+      "source": "Name",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "dd973baeb4a15f76",
+      "source": "Reference implementation",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 24,
+      "display_width": 24,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "de11888c26e01209",
+      "source": "from your organization",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 22,
+      "display_width": 22,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "de53c37882353d7f",
+      "source": "This artifact wants to open {appName} with the link {url}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 57,
+      "display_width": 57,
+      "placeholders": [
+        "{appName}",
+        "{url}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "debac32d11107e14",
+      "source": "Hardware Buddy & Maker Devices",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 30,
+      "display_width": 30,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "deea977e8988fdbb",
+      "source": "Scanning for 5s…",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 18,
+      "display_width": 16,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "df37ab3e1390e8cc",
+      "source": "No space was freed.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 19,
+      "display_width": 19,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "dfcb7c1619d5abd1",
+      "source": "Battery",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 7,
+      "display_width": 7,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "e02e84821017162a",
+      "source": "Claude could not be moved to the Applications folder. You can keep using it from here, or drag it to Applications yourself from Finder.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 135,
+      "display_width": 135,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "e0ad20384046103a",
+      "source": "Some folders were skipped",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 25,
+      "display_width": 25,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "e0de8e28f1bed28d",
+      "source": "Show All Dev Tools",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 18,
+      "display_width": 18,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "e13da1ca697b0d12",
+      "source": "The following extensions have been disabled because they are not allowed in your current organization:",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 102,
+      "display_width": 102,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "e153e911b8ee063f",
+      "source": "Couldn't open that session from Claude Code.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 44,
+      "display_width": 44,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "e1ac819f155e8ea0",
+      "source": "Could not move to Applications",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 30,
+      "display_width": 30,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "e21f935f11d7e966",
+      "source": "Copy",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "e267b563db4e9d08",
+      "source": "You'll need to grant Claude access to your microphone in System Settings.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 73,
+      "display_width": 73,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "e29f88fda9e5975d",
+      "source": "Show Cowork Session Data in Finder",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 34,
+      "display_width": 34,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "e64c2d1d70cdbbae",
+      "source": "Configure Third-Party Inference…",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 34,
+      "display_width": 32,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "e7089f5afe7ef72a",
+      "source": "Show Dev Tools",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 14,
+      "display_width": 14,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "e74694004403de37",
+      "source": "The extension could not be installed. Please ensure the extension folder is valid and try again. The error was: {errorMessage}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 126,
+      "display_width": 126,
+      "placeholders": [
+        "{errorMessage}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "e799c702cdebca56",
+      "source": "Claude works best when run from your Applications folder. Would you like to move it there now?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 94,
+      "display_width": 94,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "e8d15dadf4df686f",
+      "source": "Some items could not be removed.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 32,
+      "display_width": 32,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "e9af7e897bdcb519",
+      "source": "You are running the latest version.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "DANGER",
+      "risk_reason": "R-SYSPROMPT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 35,
+      "display_width": 35,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ea53e7c0d57a26c3",
+      "source": "Load Local Claude.ai",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 20,
+      "display_width": 20,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "eb39d7ae9ff57202",
+      "source": "Get support",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 11,
+      "display_width": 11,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "eb55e9232d2a7503",
+      "source": "Plan usage",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 10,
+      "display_width": 10,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ebacb89c106b20e4",
+      "source": "About Claude",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 12,
+      "display_width": 12,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ec0111edee2ea2b8",
+      "source": "Wait for Claude",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 15,
+      "display_width": 15,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ec2d9b2a4db92a57",
+      "source": "This desktop extension will be installed on your computer and made available to Claude.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 87,
+      "display_width": 87,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ec3139e7c61cb057",
+      "source": "Cowork is not currently supported on {platform} with an {arch} CPU",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 66,
+      "display_width": 66,
+      "placeholders": [
+        "{platform}",
+        "{arch}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ec462ac8980e2f17",
+      "source": "Show App",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 8,
+      "display_width": 8,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ed077f3d8125d60d",
+      "source": "Open",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "edf88c9f8127d7b8",
+      "source": "Open email link?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 16,
+      "display_width": 16,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ef2dd97eba1523d0",
+      "source": "{kb}KB",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 6,
+      "display_width": 6,
+      "placeholders": [
+        "{kb}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ef37f4e061bb04ce",
+      "source": "Actual Size",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 11,
+      "display_width": 11,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ef5d080f16135ae1",
+      "source": "Enable Cowork SDK Debugging",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 27,
+      "display_width": 27,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "f0810c82f70f967d",
+      "source": "Extra usage · {used}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 21,
+      "display_width": 20,
+      "placeholders": [
+        "{used}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "f1c65e14817efef2",
+      "source": "Forward",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 7,
+      "display_width": 7,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "f1f3c251df4fccb4",
+      "source": "Couldn't connect to Claude",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 26,
+      "display_width": 26,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "f3380f7b44bd70af",
+      "source": "Paste",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 5,
+      "display_width": 5,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "f3d7f001a51e2092",
+      "source": "Folder access disabled",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 22,
+      "display_width": 22,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "f411a1fb62758b4c",
+      "source": "Free",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 4,
+      "display_width": 4,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "f4449260d8ee66d8",
+      "source": "Failed to check for updates: {error}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 36,
+      "display_width": 36,
+      "placeholders": [
+        "{error}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "f57566cd6ff24ac6",
+      "source": "Install Claude in Chrome",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 24,
+      "display_width": 24,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "f5b551f8d3761b9f",
+      "source": "To exit full screen, press {esc}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 32,
+      "display_width": 32,
+      "placeholders": [
+        "{esc}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "f6232ebb5def1fd0",
+      "source": "Copy Installation ID",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 20,
+      "display_width": 20,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "f71148f7b32c3bef",
+      "source": "Open Developer Config File...",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 29,
+      "display_width": 29,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "f760e3779bd09e37",
+      "source": "Tap to open",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 11,
+      "display_width": 11,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "f7bcf7483dbdb97f",
+      "source": "Your session has expired.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 25,
+      "display_width": 25,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "f99387ef2742eefa",
+      "source": "Failed to install extension",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 27,
+      "display_width": 27,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "f9f33b667ca8f469",
+      "source": "Submit Feedback",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 15,
+      "display_width": 15,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "fac4c31c4dd82049",
+      "source": "That feature change requires an app restart to take effect.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 59,
+      "display_width": 59,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "fad7b847fb8542f8",
+      "source": "As an example, we built a desk pet that lives off permission approvals and interaction with Claude. Find the firmware, build instructions, and character pack guide in the <a>claude-desktop-buddy repository</a>.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 210,
+      "display_width": 210,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "fb13e646d2667c24",
+      "source": "Disable Hardware Acceleration",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 29,
+      "display_width": 29,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "fc53054947d0cfc4",
+      "source": "Move to Applications folder?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 28,
+      "display_width": 28,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "fc6e4a408d56be96",
+      "source": "Leave",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 5,
+      "display_width": 5,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "fcf823b421fdc526",
+      "source": "from {orgName}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 14,
+      "display_width": 14,
+      "placeholders": [
+        "{orgName}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "fd9fcdd00d143d28",
+      "source": "Developer mode allows access to developer tools and debugging features. Only enable this if you know what you're doing.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 119,
+      "display_width": 119,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "fe3436af86b47d22",
+      "source": "Extensions",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 10,
+      "display_width": 10,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "fe5cfdee75f74634",
+      "source": "This artifact wants to open a {protocol} link in another app: {url}",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 67,
+      "display_width": 67,
+      "placeholders": [
+        "{protocol}",
+        "{url}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "fe8cdd43bd9e7a3d",
+      "source": "Delete and Restart",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 18,
+      "display_width": 18,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "fe929167c9425561",
+      "source": "Access denied by your organization. Contact your administrator.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 63,
+      "display_width": 63,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "feabd95c2a8dc7ac",
+      "source": "{tier} plan",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 11,
+      "display_width": 11,
+      "placeholders": [
+        "{tier}"
+      ],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "fef298386dc3632a",
+      "source": "Run coding task in bypass permissions mode?",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 43,
+      "display_width": 43,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "fefc48ca7361f1e5",
+      "source": "The skill file could not be found.",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 34,
+      "display_width": 34,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    },
+    {
+      "id": "ff36884df3934f6b",
+      "source": "Extension Installation Failed",
+      "target": null,
+      "target_bilingual": null,
+      "risk": "UNKNOWN",
+      "risk_reason": "R-UITEXT",
+      "surface": "desktop.locale.catalog",
+      "byte_budget": 29,
+      "display_width": 29,
+      "placeholders": [],
+      "seen_in": [
+        "desktop@1.18286.0"
+      ],
+      "verified_at": null,
+      "deprecated": false,
+      "notes": ""
+    }
+  ]
+}
