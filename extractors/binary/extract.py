@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import bisect
+import hashlib
 import json
 import mmap
 import re
@@ -35,6 +36,55 @@ class Section:
     start: int
     end: int
     executable: bool
+
+
+def _sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as source:
+        while chunk := source.read(1024 * 1024):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def _load_surface_map(
+    path: Path | None,
+    target: str,
+    version: str,
+    artifact_sha256: str | None,
+) -> dict[int, tuple[str, str]]:
+    if path is None:
+        return {}
+    review = json.loads(path.read_text(encoding="utf-8"))
+    if review.get("target") != target or review.get("version") != version:
+        raise ValueError("native surface map target or version does not match")
+    if review.get("artifact_sha256") != artifact_sha256:
+        raise ValueError("native surface map artifact SHA-256 does not match")
+
+    result: dict[int, tuple[str, str]] = {}
+    for item in review.get("approved", []):
+        source = item.get("source")
+        surface = item.get("surface")
+        occurrences = item.get("occurrences")
+        if (
+            item.get("decision") != "APPROVED"
+            or not isinstance(source, str)
+            or not isinstance(surface, str)
+            or not surface.startswith(f"{target}.")
+            or not isinstance(occurrences, list)
+            or not occurrences
+            or any(
+                not isinstance(offset, int) or offset < 8
+                for offset in occurrences
+            )
+        ):
+            raise ValueError("native surface map contains an invalid approved entry")
+        for offset in occurrences:
+            existing = result.get(offset)
+            mapped = (source, surface)
+            if existing is not None and existing != mapped:
+                raise ValueError("native surface map assigns conflicting offsets")
+            result[offset] = mapped
+    return result
 
 
 def _pe_sections(path: Path) -> list[Section]:
@@ -89,9 +139,17 @@ def extract(
     output_path: Path,
     target: str,
     version: str,
+    surface_map_path: Path | None = None,
 ) -> int:
     sections = _pe_sections(source_path)
     section_starts = [section.start for section in sections]
+    artifact_sha256 = _sha256(source_path) if surface_map_path else None
+    surface_map = _load_surface_map(
+        surface_map_path,
+        target,
+        version,
+        artifact_sha256,
+    )
     count = 0
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with source_path.open("rb") as source, output_path.open(
@@ -112,6 +170,20 @@ def extract(
                 if not text.isprintable():
                     continue
                 section = _section_at(sections, section_starts, match.start())
+                bun_tag = None
+                bun_length = None
+                if section and section.name == ".bun" and match.start() >= 8:
+                    bun_tag, bun_length = struct.unpack_from(
+                        "<II",
+                        data,
+                        match.start() - 8,
+                    )
+                bun_string_record = (
+                    bun_tag == 9
+                    and bun_length == len(raw)
+                    and section is not None
+                    and section.name == ".bun"
+                )
                 record = {
                     "source": text,
                     "target": target,
@@ -127,8 +199,19 @@ def extract(
                         "section_executable": (
                             section.executable if section else None
                         ),
+                        "bun_string_record": bun_string_record,
+                        "bun_tag": bun_tag,
+                        "bun_length": bun_length,
                     },
                 }
+                mapped = surface_map.get(match.start())
+                if mapped is not None:
+                    mapped_source, mapped_surface = mapped
+                    if not bun_string_record or mapped_source != text:
+                        raise ValueError(
+                            "native surface map offset does not match a Bun string record"
+                        )
+                    record["surface"] = mapped_surface
                 output.write(
                     json.dumps(record, ensure_ascii=False, separators=(",", ":"))
                     + "\n"
@@ -143,8 +226,15 @@ def main() -> None:
     parser.add_argument("target", choices=("cli", "desktop"))
     parser.add_argument("version")
     parser.add_argument("output", type=Path)
+    parser.add_argument("--surface-map", type=Path)
     args = parser.parse_args()
-    count = extract(args.source, args.output, args.target, args.version)
+    count = extract(
+        args.source,
+        args.output,
+        args.target,
+        args.version,
+        args.surface_map,
+    )
     print(json.dumps({"extracted": count}))
 
 

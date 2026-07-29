@@ -443,6 +443,13 @@ def extract_cli(
             version,
             str(output),
         ]
+        surface_map = (
+            ROOT
+            / "reviews"
+            / f"cli-{version}-native-surfaces.json"
+        )
+        if surface_map.is_file():
+            command.extend(["--surface-map", str(surface_map)])
     else:
         raise RuntimeError(f"unknown artifact type: {prepared['artifact_type']}")
     result = subprocess.run(
