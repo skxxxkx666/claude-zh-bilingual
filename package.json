@@ -2,7 +2,25 @@
   "name": "claude-zh",
   "private": true,
   "version": "0.1.0",
-  "description": "Claude Code and Desktop zh-CN localization with bilingual terminology",
+  "description": "安全可还原的 Claude Code / Claude Desktop 简体中文本地化与中英术语对照",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "claude-desktop",
+    "chinese",
+    "zh-cn",
+    "localization",
+    "translation",
+    "i18n"
+  ],
+  "homepage": "https://github.com/skxxxkx666/claude-zh-bilingual#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skxxxkx666/claude-zh-bilingual.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skxxxkx666/claude-zh-bilingual/issues"
+  },
   "bin": {
     "claude-zh": "bin/claude-zh.cjs"
   },

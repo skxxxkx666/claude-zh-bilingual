@@ -31,6 +31,16 @@ npm run validate:support
 macOS / Linux 将 Python 路径换成 `.venv/bin/python`。这些命令不会安装或修改
 Claude。
 
+Windows 单文件启动器需要 .NET 8 SDK 与官方 Node `22.23.1` Windows x64 分发目录：
+
+```powershell
+.\scripts\build_windows_launcher.ps1 -NodeRoot C:\path\to\node-v22.23.1-win-x64
+.\artifacts\claude-zh-windows-x64.exe --launcher-version
+.\artifacts\claude-zh-windows-x64.exe --launcher-self-test
+```
+
+本地 EXE 只能用于验证。Release 资产必须来自 GitHub Actions，不能手工上传。
+
 ## 提交翻译
 
 1. 从带有 `translation` 标签的 issue 选择条目；若同时有 `good first issue`，优先
