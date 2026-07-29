@@ -12,7 +12,7 @@
 
 Claude Code / Claude Desktop 中文化 · 中英术语对照模式 · Claude 汉化 zh-CN localization with bilingual terminology
 
-> 当前处于 W1–2 地基阶段，尚未发布可安装版本。
+> W1–2 地基已完成，尚未发布可安装版本。
 
 ## 项目定位
 
