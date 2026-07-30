@@ -1,8 +1,8 @@
 # 支持矩阵
 
-> 此文件由 `python scripts/release_status.py --write` 生成，数据源是 `release/desktop-v0.2.0-rc.1.json`，不要手工修改。
+> 此文件由 `python scripts/release_status.py --write` 生成，数据源是 `release/desktop-v0.2.0-rc.2.json`，不要手工修改。
 
-## v0.2.0-rc.1 状态
+## v0.2.0-rc.2 状态
 
 当前门禁：**候选可发布**。
 
@@ -24,6 +24,7 @@
 | 内置 Node | `22.23.1` |
 | Authenticode | 未签名 |
 | embedded_cli | pass：GitHub Actions 从 EXE 运行内置 CLI --help |
+| doctor | pass：GitHub Actions 从 EXE 运行只读 doctor --json |
 | conpty | pass：GitHub Actions 从 EXE 加载 node-pty 并验证 PTY_OK |
 
 下载同一 Release 中的 EXE 与 `SHA256SUMS.windows`，然后核对：
@@ -33,7 +34,7 @@
 Get-Content .\SHA256SUMS.windows
 ```
 
-两处哈希必须完全一致。确认后双击 EXE，按中文菜单执行安装、状态检查或还原。此候选版不替代稳定版 `v0.1.0`。
+两处哈希必须完全一致。确认后双击 EXE，按中文菜单执行安装、诊断、状态检查或还原。此候选版不替代稳定版 `v0.1.0`。
 
 ## 平台与版本
 
@@ -56,10 +57,11 @@ Get-Content .\SHA256SUMS.windows
 
 ## 安装与还原
 
-从 GitHub Release 下载 `claude-zh-0.2.0-rc.1.tgz` 后，在空目录执行：
+从 GitHub Release 下载 `claude-zh-0.2.0-rc.2.tgz` 后，在空目录执行：
 
 ```powershell
-npm install .\claude-zh-0.2.0-rc.1.tgz
+npm install .\claude-zh-0.2.0-rc.2.tgz
+npx claude-zh doctor
 npx claude-zh status
 npx claude-zh install desktop --mode=zh
 npx claude-zh restore desktop
