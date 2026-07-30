@@ -11,6 +11,7 @@ const {
 } = require("../patchers/desktop-asar/index.cjs");
 const {
   main,
+  nodeVersionSupported,
   parseArguments,
   usage,
 } = require("../bin/claude-zh.cjs");
@@ -105,6 +106,13 @@ test("parses the doctor JSON flag", () => {
 
   assert.deepEqual(result.positional, ["doctor"]);
   assert.equal(result.options.json, true);
+});
+
+
+test("doctor enforces the documented Node.js minimum", () => {
+  assert.equal(nodeVersionSupported("22.11.0"), false);
+  assert.equal(nodeVersionSupported("22.12.0"), true);
+  assert.equal(nodeVersionSupported("23.0.0"), true);
 });
 
 

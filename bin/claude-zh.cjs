@@ -370,6 +370,7 @@ if (require.main === module) {
 
 module.exports = {
   main,
+  nodeVersionSupported,
   parseArguments,
   usage,
 };
