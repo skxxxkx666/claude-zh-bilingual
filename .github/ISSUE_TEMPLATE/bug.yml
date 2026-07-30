@@ -33,10 +33,11 @@ body:
     validations:
       required: true
   - type: textarea
-    id: status
+    id: diagnostics
     attributes:
-      label: claude-zh status 输出
-      render: shell
+      label: claude-zh doctor --json 输出
+      description: 稳定版 v0.1.0 没有 doctor 时可改贴 claude-zh status；提交前检查用户名和自定义路径
+      render: json
     validations:
       required: true
   - type: textarea

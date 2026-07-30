@@ -18,6 +18,7 @@ const {
   CodeLayerBError,
   runPtyBridge,
 } = require("../patchers/cli-layer-b/index.cjs");
+const packageMetadata = require("../package.json");
 
 
 function usage() {
@@ -29,6 +30,7 @@ function usage() {
     "  claude-zh restore desktop [--app-root=PATH]",
     "  claude-zh restore code",
     "  claude-zh status [desktop|code] [--app-root=PATH]",
+    "  claude-zh doctor [--json] [--app-root=PATH]",
     "  claude-zh --help",
   ].join("\n");
 }
@@ -45,6 +47,10 @@ function parseArguments(argv) {
     }
     if (!argument.startsWith("--")) {
       positional.push(argument);
+      continue;
+    }
+    if (argument === "--json") {
+      options.json = true;
       continue;
     }
     const separator = argument.indexOf("=");
@@ -82,6 +88,152 @@ function parseArguments(argv) {
     }
   }
   return { positional, options };
+}
+
+
+function nodeVersionSupported(version = process.versions.node) {
+  const [major, minor] = version.split(".").map(Number);
+  return major > 22 || (major === 22 && minor >= 12);
+}
+
+
+function desktopDoctorCheck(status) {
+  if (status.state === "managed") {
+    const changed = status.installations.filter(
+      (installation) => installation.state !== "installed",
+    );
+    return changed.length === 0
+      ? {
+          id: "desktop",
+          level: "pass",
+          message: `${status.installations.length} managed installation(s) verified.`,
+          details: status,
+        }
+      : {
+          id: "desktop",
+          level: "warning",
+          message: `${changed.length} managed installation(s) changed after installation.`,
+          details: status,
+        };
+  }
+  if (status.state === "msix-unsupported") {
+    return {
+      id: "desktop",
+      level: "warning",
+      message: "MSIX installation detected; this project will not modify WindowsApps.",
+      details: status,
+    };
+  }
+  if (status.state === "not-installed") {
+    return {
+      id: "desktop",
+      level: "info",
+      message: "Supported Desktop installation found; localization is not installed.",
+      details: status,
+    };
+  }
+  return {
+    id: "desktop",
+    level: "info",
+    message: "Claude Desktop was not found.",
+    details: status,
+  };
+}
+
+
+function codeDoctorCheck(status) {
+  if (status.state === "not-installed") {
+    return {
+      id: "code-layer-a",
+      level: "info",
+      message: "Claude Code Layer A is not installed.",
+      details: status,
+    };
+  }
+  if (status.state === "installed" && status.mismatches.length === 0) {
+    return {
+      id: "code-layer-a",
+      level: "pass",
+      message: "Claude Code Layer A managed files verified.",
+      details: status,
+    };
+  }
+  return {
+    id: "code-layer-a",
+    level: "warning",
+    message: status.mismatches.length > 0
+      ? `${status.mismatches.length} managed Claude Code file(s) changed after installation.`
+      : `Unexpected Claude Code Layer A state: ${status.state}.`,
+    details: status,
+  };
+}
+
+
+async function doctor(options = {}) {
+  const supportedNode = nodeVersionSupported();
+  const checks = [
+    {
+      id: "node",
+      level: supportedNode ? "pass" : "error",
+      message: supportedNode
+        ? `Node.js ${process.versions.node} satisfies ${packageMetadata.engines.node}.`
+        : `Node.js ${process.versions.node} does not satisfy ${packageMetadata.engines.node}.`,
+    },
+  ];
+
+  try {
+    checks.push(desktopDoctorCheck(await statusDesktop(options)));
+  } catch (error) {
+    checks.push({
+      id: "desktop",
+      level: "error",
+      message: error instanceof Error ? error.message : String(error),
+    });
+  }
+  try {
+    checks.push(codeDoctorCheck(await statusCodeLayerA(options)));
+  } catch (error) {
+    checks.push({
+      id: "code-layer-a",
+      level: "error",
+      message: error instanceof Error ? error.message : String(error),
+    });
+  }
+
+  const overall = checks.some((check) => check.level === "error")
+    ? "error"
+    : checks.some((check) => check.level === "warning")
+      ? "attention"
+      : "ok";
+  return {
+    schemaVersion: 1,
+    toolVersion: packageMetadata.version,
+    platform: process.platform,
+    arch: process.arch,
+    overall,
+    checks,
+  };
+}
+
+
+function formatDoctorReport(report) {
+  const labels = {
+    pass: "PASS",
+    info: "INFO",
+    warning: "WARN",
+    error: "ERROR",
+  };
+  return [
+    `claude-zh doctor ${report.toolVersion}`,
+    `Platform: ${report.platform} ${report.arch}`,
+    "",
+    ...report.checks.map(
+      (check) => `[${labels[check.level]}] ${check.id}: ${check.message}`,
+    ),
+    "",
+    `Result: ${report.overall.toUpperCase()}`,
+    "Use --json for a machine-readable report.",
+  ].join("\n");
 }
 
 
@@ -178,6 +330,15 @@ async function main(argv = process.argv.slice(2)) {
     console.log(JSON.stringify(result, null, 2));
     return 0;
   }
+  if (command === "doctor" && target === undefined && positional.length === 1) {
+    const report = await doctor(options);
+    console.log(
+      options.json
+        ? JSON.stringify(report, null, 2)
+        : formatDoctorReport(report),
+    );
+    return report.overall === "error" ? 2 : report.overall === "attention" ? 1 : 0;
+  }
   throw new DesktopPatchError("INVALID_ARGUMENT", usage());
 }
 
@@ -207,4 +368,9 @@ if (require.main === module) {
 }
 
 
-module.exports = { main, parseArguments, usage };
+module.exports = {
+  main,
+  nodeVersionSupported,
+  parseArguments,
+  usage,
+};

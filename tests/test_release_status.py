@@ -73,7 +73,11 @@ class ReleaseStatusTests(unittest.TestCase):
                 "artifact": "claude-zh-windows-x64.exe",
                 "node_version": "22.23.1",
                 "signed": False,
-                "smoke": {},
+                "smoke": {
+                    "embedded_cli": {"status": "pass", "evidence": "help"},
+                    "doctor": {"status": "pass", "evidence": "doctor"},
+                    "conpty": {"status": "pass", "evidence": "pty"},
+                },
             },
         }
 
@@ -123,6 +127,7 @@ class ReleaseStatusTests(unittest.TestCase):
                     "signed": False,
                     "smoke": {
                         "embedded_cli": {"status": "pass"},
+                        "doctor": {"status": "pass"},
                         "conpty": {"status": "pass"},
                     },
                 },

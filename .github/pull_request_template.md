@@ -4,6 +4,7 @@
 - [ ] 风险等级
 - [ ] patcher / extractor / classifier
 - [ ] 文档或 CI
+- [ ] 用户体验 / 诊断
 
 ## 变更范围
 
@@ -23,6 +24,7 @@
 - [ ] Node.js 测试
 - [ ] 支持矩阵校验
 - [ ] 与本次改动对应的冒烟测试
+- [ ] 用户可见变化已记录到 CHANGELOG 的 `Unreleased` 或当前候选版本
 
 ## 安全检查
 

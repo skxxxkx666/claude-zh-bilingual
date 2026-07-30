@@ -157,7 +157,7 @@ def render_support_matrix(
                 "```",
                 "",
                 "两处哈希必须完全一致。确认后双击 EXE，按中文菜单执行安装、"
-                "状态检查或还原。此候选版不替代稳定版 `v0.1.0`。",
+                "诊断、状态检查或还原。此候选版不替代稳定版 `v0.1.0`。",
             ]
         )
 
@@ -205,6 +205,7 @@ def render_support_matrix(
             "",
             "```powershell",
             f"npm install .\\{package_filename}",
+            "npx claude-zh doctor",
             "npx claude-zh status",
             "npx claude-zh install desktop --mode=zh",
             "npx claude-zh restore desktop",
@@ -285,11 +286,13 @@ def release_gate_errors(
         elif not launcher["signed"] and release_channel != "prerelease":
             errors.append("unsigned launcher is allowed only in a prerelease")
         launcher_smoke = launcher.get("smoke", {})
-        required_launcher_smoke = {"embedded_cli", "conpty"}
+        required_launcher_smoke = {"embedded_cli", "doctor", "conpty"}
         if set(launcher_smoke) != required_launcher_smoke or any(
             result.get("status") != "pass" for result in launcher_smoke.values()
         ):
-            errors.append("launcher embedded CLI and ConPTY smoke tests must pass")
+            errors.append(
+                "launcher embedded CLI, doctor, and ConPTY smoke tests must pass"
+            )
     return errors
 
 

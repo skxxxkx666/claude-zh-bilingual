@@ -11,6 +11,9 @@ Claude 的功能正确性，其次才追求翻译覆盖率。拿不准的字符�
   [`corpus/glossary.json`](../corpus/glossary.json) 为准。
 - 代码使用 MIT；提交到 `corpus/` 的翻译语料使用 CC0-1.0。
 - 遵守 [`CODE_OF_CONDUCT.md`](../CODE_OF_CONDUCT.md)。
+- 先查看 [`ROADMAP.md`](ROADMAP.md) 和
+  [`competitive-analysis.md`](competitive-analysis.md)，避免重复实现已明确不做
+  的高风险功能。
 
 ## 本地环境
 
@@ -26,6 +29,7 @@ npm ci --ignore-scripts
 .\.venv\Scripts\python.exe schema/validate.py corpus
 npm test
 npm run validate:support
+npx claude-zh doctor --json
 ```
 
 macOS / Linux 将 Python 路径换成 `.venv/bin/python`。这些命令不会安装或修改
@@ -88,6 +92,10 @@ PR 必须：
 - 对风险等级变化提供证据；
 - 通过 `Tests` 和 `Validate corpus`；
 - 不包含凭证、用户数据或上游专有产物。
+
+用户可见功能需要在 [`CHANGELOG.md`](../CHANGELOG.md) 的 `Unreleased` 记录；改变
+支持范围时同步更新 release manifest 并重新生成支持矩阵。不要用新提交覆盖已有 tag
+的 Release 资产。
 
 安全问题不要提交公开 issue，请按 [`SECURITY.md`](../SECURITY.md) 使用 GitHub
 私密漏洞报告。

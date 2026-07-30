@@ -5,17 +5,7 @@ on:
     branches:
       - main
     paths:
-      - ".github/workflows/release.yml"
-      - "bin/**"
-      - "corpus/**"
-      - "launcher/**"
-      - "patchers/**"
       - "release/**"
-      - "package.json"
-      - "package-lock.json"
-      - "scripts/build_windows_launcher.ps1"
-      - "scripts/release_status.py"
-      - "docs/support-matrix.md"
   workflow_dispatch:
 
 permissions:
@@ -69,6 +59,16 @@ jobs:
           if ($LASTEXITCODE -ne 0 -or $helpOutput -notmatch "Usage:") {
             throw "Embedded Node.js help smoke test failed."
           }
+          $doctorOutput = & $launcher doctor --json | Out-String
+          $doctorExit = $LASTEXITCODE
+          $doctorReport = $doctorOutput | ConvertFrom-Json
+          if (
+            $doctorExit -ne 0 -or
+            $doctorReport.schemaVersion -ne 1 -or
+            $doctorReport.toolVersion -ne $packageVersion
+          ) {
+            throw "Embedded doctor smoke test failed."
+          }
           $ptyOutput = & $launcher --launcher-self-test | Out-String
           if ($LASTEXITCODE -ne 0 -or $ptyOutput -notmatch "PTY_OK") {
             throw "Embedded node-pty smoke test failed."
@@ -109,6 +109,14 @@ jobs:
         run: |
           expected_tag="v$(node -p "require('./package.json').version")"
           echo "RELEASE_TAG=${expected_tag}" >> "${GITHUB_ENV}"
+          if git rev-parse --verify "refs/tags/${expected_tag}" >/dev/null 2>&1; then
+            tagged_commit="$(git rev-list -n 1 "${expected_tag}")"
+            if [ "${tagged_commit}" != "${GITHUB_SHA}" ]; then
+              echo "${expected_tag} points to ${tagged_commit}, not ${GITHUB_SHA}." >&2
+              echo "Bump the package version and add a new release manifest." >&2
+              exit 1
+            fi
+          fi
           if [[ "${expected_tag}" == *-* ]]; then
             echo "RELEASE_PRERELEASE=true" >> "${GITHUB_ENV}"
           else

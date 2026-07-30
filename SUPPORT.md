@@ -18,3 +18,12 @@
 
 提问前请查看 [`docs/support-matrix.md`](docs/support-matrix.md)。不在支持矩阵中的
 平台或版本可以讨论，但维护者不会要求用户关闭系统安全功能来完成适配。
+
+提交安装问题前运行：
+
+```powershell
+npx claude-zh doctor --json
+```
+
+附上输出前先检查其中的用户名和自定义路径。诊断命令只读且不联网；结果解释见
+[`docs/diagnostics.md`](docs/diagnostics.md)。

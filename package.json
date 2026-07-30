@@ -1,7 +1,7 @@
 {
   "name": "claude-zh",
   "private": true,
-  "version": "0.2.0-rc.1",
+  "version": "0.2.0-rc.2",
   "description": "安全可还原的 Claude Code / Claude Desktop 简体中文本地化与中英术语对照",
   "keywords": [
     "claude",
@@ -11,7 +11,11 @@
     "zh-cn",
     "localization",
     "translation",
-    "i18n"
+    "i18n",
+    "bilingual",
+    "windows",
+    "claude-chinese",
+    "claude-code-chinese"
   ],
   "homepage": "https://github.com/skxxxkx666/claude-zh-bilingual#readme",
   "repository": {
@@ -27,12 +31,16 @@
   "files": [
     "bin",
     "corpus",
-    "docs/screenshots/desktop-menu-zh.png",
+    "docs",
     "patchers/cli-layer-a",
     "patchers/cli-layer-b",
     "patchers/desktop-asar",
+    "CHANGELOG.md",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "README.en.md",
+    "SECURITY.md",
+    "SUPPORT.md"
   ],
   "engines": {
     "node": ">=22.12.0"

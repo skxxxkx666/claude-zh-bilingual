@@ -79,10 +79,11 @@ internal static class Program
         Console.WriteLine("  6. 查看 Claude Code 状态");
         Console.WriteLine("  7. 还原 Desktop");
         Console.WriteLine("  8. 还原 Claude Code A 层");
-        Console.WriteLine("  9. 运行实验性 Claude Code B 层");
+        Console.WriteLine("  9. 运行只读诊断");
+        Console.WriteLine(" 10. 运行实验性 Claude Code B 层");
         Console.WriteLine("  0. 退出");
         Console.WriteLine();
-        Console.Write("请选择 [0-9]: ");
+        Console.Write("请选择 [0-10]: ");
 
         return Console.ReadLine()?.Trim() switch
         {
@@ -94,7 +95,8 @@ internal static class Program
             "6" => ["status", "code"],
             "7" => ["restore", "desktop"],
             "8" => ["restore", "code"],
-            "9" => PromptForLayerBBinary(),
+            "9" => ["doctor"],
+            "10" => PromptForLayerBBinary(),
             _ => [],
         };
     }

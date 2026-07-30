@@ -61,13 +61,23 @@ Topics
 
 ### 1.1 竞品盘点
 
-| 项目 | 目标 | 完成度 | 关键特征 |
-|---|---|---|---|
-| taekchef/claude-code-zh-cn | CLI | 高 | 四层机制(设置注入 + Hook + 插件 + CLI Patch),版本支持矩阵,自动降级 |
-| KongBai1145/claude-code-zh-cn | CLI | 中高 | 1742 条 UI 翻译,187 个 spinner 动词,一键安装/卸载 |
-| Jyy1529/claude-desktop_win-zh_cn | Desktop | 中高 | 12700+ keys,Windows 双安装路径检测,JS chunk 硬编码文案修补 |
+> 2026-07-30 已按三个公开仓库的 README、目录、Release 和许可证重新核验。数字是
+> 对方项目自己的公开口径，详细来源与取舍见
+> [`competitive-analysis.md`](competitive-analysis.md)。
 
-**结论**:纯汉化赛道饱和。所有项目均为「纯中文替换」,**无人做中英对照**,亦无人提供可被复用的开放语料层。本项目选择描述性命名正面竞争,因此**第一屏的差异化呈现是生死线**(见 §2.2)。
+| 项目 | 目标 | 当前优势 | 本项目借鉴 |
+|---|---|---|---|
+| taekchef/claude-code-zh-cn | CLI | 四层机制、版本支持矩阵、doctor、CHANGELOG、失败自动降级 | 首屏定位、诊断入口、支持证据和变更记录 |
+| KongBai1145/claude-code-zh-cn | CLI | 一键安装/卸载、Windows 可视化菜单、doctor、简洁功能表 | 按用户场景选择入口、菜单诊断、低学习成本 |
+| Jyy1529/claude-desktop_win-zh_cn | Desktop | 便携 GUI、进度日志、手动目录选择、覆盖报告和恢复入口 | 单文件分发、可见诊断、覆盖率证据；GUI 进度列入后续评估 |
+
+**结论**：纯中文替换已有成熟项目，本项目不以“翻译条目最多”为目标。差异化是
+Claude Code + Desktop 双端、`zh` / `bilingual` 双模式、CC0 可复用语料和
+SAFE 风险门禁。当前社区规范文件已齐全，下一步重点是让首屏、doctor、CHANGELOG、
+路线图和支持证据形成一条外部用户可理解的路径。
+
+借鉴只限常见开源结构、用户旅程和诊断思路。不会照搬自动结束进程、修改
+WindowsApps、翻译模型触发描述或扩大到会话管理/第三方网关等高风险功能。
 
 ### 1.2 决定性技术变化
 
