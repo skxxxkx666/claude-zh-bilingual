@@ -1,41 +1,66 @@
 # Claude Code 中文汉化 / Claude Desktop 中文化
 
-`claude-zh-bilingual`：安全、可还原的简体中文本地化与中英术语对照。
+**`claude-zh-bilingual`：Claude Code 与 Claude Desktop 的安全中文化和中英
+对照。**
+
+一份可复用语料，两种显示模式；安装可诊断、改动可验证、结果可还原。
 
 [English](README.en.md) ·
 [下载稳定版](https://github.com/skxxxkx666/claude-zh-bilingual/releases/latest) ·
-[Windows EXE 候选版](https://github.com/skxxxkx666/claude-zh-bilingual/releases/tag/v0.2.0-rc.1) ·
+[Windows EXE 候选版](https://github.com/skxxxkx666/claude-zh-bilingual/releases/tag/v0.2.0-rc.2) ·
+[文档](docs/README.md) ·
 [支持矩阵](docs/support-matrix.md) ·
+[路线图](docs/ROADMAP.md) ·
+[变更记录](CHANGELOG.md) ·
 [参与贡献](docs/CONTRIBUTING.md)
 
 [![Tests](https://github.com/skxxxkx666/claude-zh-bilingual/actions/workflows/test.yml/badge.svg)](https://github.com/skxxxkx666/claude-zh-bilingual/actions/workflows/test.yml)
 [![Validate corpus](https://github.com/skxxxkx666/claude-zh-bilingual/actions/workflows/validate.yml/badge.svg)](https://github.com/skxxxkx666/claude-zh-bilingual/actions/workflows/validate.yml)
 [![Windows launcher](https://github.com/skxxxkx666/claude-zh-bilingual/actions/workflows/launcher.yml/badge.svg)](https://github.com/skxxxkx666/claude-zh-bilingual/actions/workflows/launcher.yml)
+[![Stable release](https://img.shields.io/github/v/release/skxxxkx666/claude-zh-bilingual?display_name=tag&sort=semver)](https://github.com/skxxxkx666/claude-zh-bilingual/releases/latest)
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Corpus: CC0](https://img.shields.io/badge/corpus-CC0-green.svg)](corpus/LICENSE)
 
 看得懂中文，也能保留 `compact`、`Permission denied` 等英文关键词去查官方文档和
 搜索报错。项目只翻译经过审核的界面文案，不修改鉴权、网络或模型提示。
 
+## 先选你的路径
+
+| 你的目标 | 推荐入口 | 状态 |
+|---|---|---|
+| Windows 上双击使用，不安装 Node | [`v0.2.0-rc.2` 单文件 EXE](https://github.com/skxxxkx666/claude-zh-bilingual/releases/tag/v0.2.0-rc.2) | 候选版，未签名 |
+| 使用经过完整 Desktop 冒烟的稳定包 | [`v0.1.0` `.tgz`](https://github.com/skxxxkx666/claude-zh-bilingual/releases/latest) | 稳定版 |
+| 判断安装、版本或还原问题 | [`claude-zh doctor`](docs/diagnostics.md) | 只读、不联网 |
+| 提交翻译或代码 | [贡献指南](docs/CONTRIBUTING.md) | PR + CI 审核 |
+
 > 稳定版 `v0.1.0` 支持 Windows 非 MSIX Claude Desktop `1.18286.0`，
 > D1–D4 已全部通过。
 > 当前源码另含 Claude Code `2.1.201` 的 A 层，以及 `2.1.220` 的实验性 B 层；
 > 两层均已通过 S1–S3。
 >
-> `v0.2.0-rc.1` 提供 Windows x64 单文件 EXE 候选版。它未经
+> `v0.2.0-rc.2` 提供 Windows x64 单文件 EXE 候选版。它未经
 > Authenticode 签名，可能触发 SmartScreen；稳定版 `v0.1.0` 保持不变。
 
 ![Claude Desktop 中文菜单](docs/screenshots/desktop-menu-zh.png)
 
-## 为什么做中英对照
+## 项目有什么不同
 
-| 模式 | 界面示例 | 适合场景 |
-|---|---|---|
-| `zh` | `压缩上下文` | 更偏好纯中文界面 |
-| `bilingual` | `压缩上下文 (compact)` | 需要查文档、搜报错、提交 issue |
+| 能力 | 本项目的做法 |
+|---|---|
+| 两种显示模式 | `zh` 显示“压缩上下文”；`bilingual` 显示“压缩上下文 (compact)” |
+| 双产品 | 同一套风险规则和术语服务 Claude Code 与 Claude Desktop |
+| 可复用数据 | 翻译语料使用 CC0-1.0，代码使用 MIT |
+| 风险门禁 | 只有 `SAFE` UI 文案能翻译；prompt、tool description 和代码匹配字符串保持英文 |
+| 失败方式 | 新版本、结构或哈希不匹配时停止，不用“尽量写入”换取表面覆盖率 |
+| 诊断与还原 | `doctor` 只读检查；持久改动先备份，失败自动回滚，还原后验证 SHA-256 |
 
 Claude Code 与 Claude Desktop 的产品名、命令、报错关键词和官方文档高频术语可以
 保留英文。语料采用 CC0-1.0，其他项目也可以复用。
+
+当前量化基线是 340 / 740 条 SAFE 语料有译文（45.9%），Desktop 已验证 320 条，
+Claude Code A 层使用 19 条，B 层验证 1 条等宽 spinner；这不等同于界面可见
+覆盖率。完整口径见 [`docs/metrics.md`](docs/metrics.md)，同类项目取舍见
+[`docs/competitive-analysis.md`](docs/competitive-analysis.md)。
 
 ## 当前能力
 
@@ -56,7 +81,7 @@ Claude Code 与 Claude Desktop 的产品名、命令、报错关键词和官方�
 ### Windows 单文件启动器（候选）
 
 从
-[`v0.2.0-rc.1` 预发布页](https://github.com/skxxxkx666/claude-zh-bilingual/releases/tag/v0.2.0-rc.1)
+[`v0.2.0-rc.2` 预发布页](https://github.com/skxxxkx666/claude-zh-bilingual/releases/tag/v0.2.0-rc.2)
 下载 `claude-zh-windows-x64.exe` 和 `SHA256SUMS.windows`。此 EXE 未做
 Authenticode 代码签名，只从本仓库 Release 下载，并在运行前核对：
 
@@ -129,13 +154,20 @@ B 层不安装文件，没有单独的还原命令；退出包装进程即恢复
 ## 状态与还原
 
 ```powershell
+npx claude-zh doctor
+npx claude-zh doctor --json
 npx claude-zh status
 npx claude-zh restore desktop
 ```
 
+`doctor` 会只读检查 Node、Desktop 安装形态与受管理文件、Claude Code A 层状态。
+退出码和 Issue 提交方式见 [`docs/diagnostics.md`](docs/diagnostics.md)。
+
 还原前同样先退出 Claude。还原成功后，生成的 `zh-CN.json`、状态文件和已使用的备份会被清理。
 
-完整平台状态见 [`docs/support-matrix.md`](docs/support-matrix.md)，Desktop 实测记录见 [`docs/W3-4-总结.md`](docs/W3-4-总结.md)，CLI A 层证据见 [`docs/extension-points.md`](docs/extension-points.md) 和 [`docs/W5-6-总结.md`](docs/W5-6-总结.md)，自动化演练见 [`docs/W7-8-总结.md`](docs/W7-8-总结.md)，原生 B/C 路线结论见 [`docs/W9-10-总结.md`](docs/W9-10-总结.md)，开源基线与 EXE 评估见 [`docs/W11-12-总结.md`](docs/W11-12-总结.md)。
+从 [`docs/README.md`](docs/README.md) 进入完整文档。平台状态见
+[`docs/support-matrix.md`](docs/support-matrix.md)，阶段证据和勘测记录也从文档导航
+访问。
 
 ## 从源码验证
 
@@ -181,6 +213,17 @@ M1 实测数据见 [`report/M1-勘测报告.md`](report/M1-勘测报告.md)。
 
 当前路线和量化基线见 [`docs/metrics.md`](docs/metrics.md)。社区参与遵守
 [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)。
+
+## 同类项目与致谢
+
+感谢
+[`taekchef/claude-code-zh-cn`](https://github.com/taekchef/claude-code-zh-cn)、
+[`KongBai1145/claude-code-zh-cn`](https://github.com/KongBai1145/claude-code-zh-cn)
+和
+[`Jyy1529/claude-desktop_win-zh_cn`](https://github.com/Jyy1529/claude-desktop_win-zh_cn)
+公开其中文化、安装、诊断与恢复经验。本项目借鉴常见的用户旅程与工程模式，没有
+复制它们的代码或翻译表。详细比较、许可证和明确不采用的做法见
+[`docs/competitive-analysis.md`](docs/competitive-analysis.md)。
 
 ## FAQ
 

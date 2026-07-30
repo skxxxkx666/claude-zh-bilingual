@@ -67,7 +67,8 @@ Bun 的编译器可以生成独立 EXE，也声明支持嵌入 `.node` addon；�
 2. Claude Code A 层中英对照或纯中文安装；
 3. Desktop / Claude Code 状态；
 4. Desktop / Claude Code 还原；
-5. 实验性 CLI B 层入口。
+5. Desktop / Claude Code 只读诊断；
+6. 实验性 CLI B 层入口。
 
 B 层继续要求用户提供明确的 `claude.exe` 路径，不自动猜测或改写已安装程序。带参数
 运行时，EXE 仍可作为自动化 CLI 使用：
@@ -88,11 +89,11 @@ claude-zh-windows-x64.exe restore desktop
 - Node 官方分发许可证和 npm 依赖许可证随 payload 保留；
 - Release 只能使用 GitHub Actions 产物，并同时发布 `SHA256SUMS.windows`。
 
-## v0.2.0-rc.1 发布决策
+## v0.2 预发布决策
 
 采用“先发布带 SHA-256 的未签名候选版”：
 
-- `v0.2.0-rc.1` 必须标记为 GitHub prerelease，不替代稳定版 `v0.1.0`；
+- `v0.2.0-rc.*` 必须标记为 GitHub prerelease，不替代稳定版 `v0.1.0`；
 - Release 工作流从源码重新构建 EXE，不接收本地产物；
 - 同时发布 `claude-zh-windows-x64.exe`、`SHA256SUMS.windows`、npm `.tgz`
   和合并校验文件 `SHA256SUMS`；
@@ -103,3 +104,7 @@ claude-zh-windows-x64.exe restore desktop
 
 这不是对稳定签名门禁的放宽。未签名 EXE 只允许出现在带连字符版本号的预发布版；
 未来稳定 EXE 仍需代码签名策略和候选用户反馈。
+
+`v0.2.0-rc.2` 在同一架构上增加只读 `doctor`。双击菜单可直接检查 Node、Desktop
+安装形态、受管理文件和 Claude Code A 层状态；诊断不联网、不结束进程、不修改
+Claude。Release CI 会额外运行 `doctor --json` 并核对报告版本。

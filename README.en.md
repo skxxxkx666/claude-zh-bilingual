@@ -7,9 +7,21 @@ Chinese UI text.
 
 [简体中文](README.md) ·
 [Latest release](https://github.com/skxxxkx666/claude-zh-bilingual/releases/latest) ·
-[Windows EXE candidate](https://github.com/skxxxkx666/claude-zh-bilingual/releases/tag/v0.2.0-rc.1) ·
+[Windows EXE candidate](https://github.com/skxxxkx666/claude-zh-bilingual/releases/tag/v0.2.0-rc.2) ·
+[Documentation](docs/README.md) ·
 [Support matrix](docs/support-matrix.md) ·
+[Roadmap](docs/ROADMAP.md) ·
+[Changelog](CHANGELOG.md) ·
 [Contributing](docs/CONTRIBUTING.md)
+
+## Choose a path
+
+| Goal | Entry point | Status |
+|---|---|---|
+| Double-click on Windows without installing Node | [`v0.2.0-rc.2` EXE](https://github.com/skxxxkx666/claude-zh-bilingual/releases/tag/v0.2.0-rc.2) | Unsigned candidate |
+| Use the fully smoke-tested Desktop package | [stable `v0.1.0`](https://github.com/skxxxkx666/claude-zh-bilingual/releases/latest) | Stable |
+| Diagnose installation or restore state | [`claude-zh doctor`](docs/diagnostics.md) | Read-only, offline |
+| Contribute translations or code | [contributing guide](docs/CONTRIBUTING.md) | PR + CI review |
 
 ## Why this project
 
@@ -21,6 +33,8 @@ Chinese UI text.
 - The translation corpus is CC0-1.0 and can be reused by other projects.
 - `bilingual` mode preserves up to two useful English terms for documentation
   and error searches.
+- One risk policy covers both Claude Code and Claude Desktop.
+- `doctor` reports the environment and managed-file state without changing it.
 
 This is an unofficial community project and is not affiliated with Anthropic.
 It never redistributes Claude executables, ASAR archives or patched upstream
@@ -60,7 +74,7 @@ npx claude-zh restore desktop
 ## Windows single-file launcher
 
 The
-[`v0.2.0-rc.1` prerelease](https://github.com/skxxxkx666/claude-zh-bilingual/releases/tag/v0.2.0-rc.1)
+[`v0.2.0-rc.2` prerelease](https://github.com/skxxxkx666/claude-zh-bilingual/releases/tag/v0.2.0-rc.2)
 includes a double-clickable `claude-zh-windows-x64.exe`. It embeds a pinned
 Node runtime, validates every extracted file, and does not require a system
 Node, npm, or .NET installation.
@@ -79,6 +93,17 @@ this EXE is an explicitly unsigned prerelease built only by GitHub Actions.
 
 See [Windows launcher design and limitations](docs/windows-launcher.md).
 
+## Diagnostics
+
+```powershell
+npx claude-zh doctor
+npx claude-zh doctor --json
+```
+
+The command checks the Node version, Desktop installation type and managed
+files, and Claude Code Layer A state. It does not use the network or modify
+Claude. See the [diagnostics guide](docs/diagnostics.md) for exit codes.
+
 ## Contributing and support
 
 Read [CONTRIBUTING.md](docs/CONTRIBUTING.md) and the
@@ -87,3 +112,13 @@ Use [GitHub Discussions](https://github.com/skxxxkx666/claude-zh-bilingual/discu
 for setup questions and private vulnerability reporting for security issues.
 
 Code is MIT licensed. Translation corpus files under `corpus/` are CC0-1.0.
+
+## Prior art
+
+The project comparison credits
+[taekchef/claude-code-zh-cn](https://github.com/taekchef/claude-code-zh-cn),
+[KongBai1145/claude-code-zh-cn](https://github.com/KongBai1145/claude-code-zh-cn),
+and
+[Jyy1529/claude-desktop_win-zh_cn](https://github.com/Jyy1529/claude-desktop_win-zh_cn).
+This repository adopts common user-flow and diagnostics ideas with original
+code and wording; it does not copy their translation tables.

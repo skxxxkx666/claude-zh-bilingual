@@ -138,7 +138,7 @@ chore(schema): 补充 deprecated 字段
 
 <!-- 每完成一个阶段,手动更新这一节 -->
 
-**阶段**:v0.2.0-rc.1 Windows 启动器候选发布
-**目标**:由 GitHub Actions 发布带 SHA-256 和 SmartScreen 警告的未签名预发布 EXE，保持 v0.1.0 稳定版不变
+**阶段**:v0.2.0-rc.2 开源规范化与自助诊断
+**目标**:融合三个同类项目的首屏、诊断、变更记录和路线图优点；由 GitHub Actions 发布带 doctor 的未签名候选 EXE，保持 v0.1.0 稳定版不变
 **本阶段禁止**:手工上传本地 EXE、在未说明签名状态时标记稳定、捆绑 Claude 上游文件、为简化操作放宽备份与验证门禁
-**下一阶段**:收集候选用户反馈，确定 Authenticode 签名方案与稳定 EXE 发布门禁
+**下一阶段**:用真实 Issue 验证 doctor，收集候选用户反馈，确定 Authenticode 签名方案与稳定 EXE 发布门禁
