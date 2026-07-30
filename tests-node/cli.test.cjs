@@ -1,6 +1,9 @@
 "use strict";
 
 const assert = require("node:assert/strict");
+const fs = require("node:fs/promises");
+const os = require("node:os");
+const path = require("node:path");
 const test = require("node:test");
 
 const {
@@ -80,6 +83,7 @@ test("usage lists install, restore, and status", () => {
   assert.match(usage(), /restore desktop/);
   assert.match(usage(), /restore code/);
   assert.match(usage(), /status/);
+  assert.match(usage(), /doctor \[--json\]/);
 });
 
 
@@ -93,4 +97,51 @@ test("help prints usage and exits successfully", async () => {
     console.log = originalLog;
   }
   assert.match(messages.join("\n"), /Usage:/);
+});
+
+
+test("parses the doctor JSON flag", () => {
+  const result = parseArguments(["doctor", "--json"]);
+
+  assert.deepEqual(result.positional, ["doctor"]);
+  assert.equal(result.options.json, true);
+});
+
+
+test("doctor emits a read-only machine-readable report", async () => {
+  const temporaryRoot = await fs.mkdtemp(
+    path.join(os.tmpdir(), "claude-zh-doctor-"),
+  );
+  const messages = [];
+  const originalLog = console.log;
+  console.log = (message) => messages.push(message);
+  try {
+    const exitCode = await main([
+      "doctor",
+      "--json",
+      `--app-root=${path.join(temporaryRoot, "missing-desktop")}`,
+      `--config-root=${path.join(temporaryRoot, "config")}`,
+      `--data-root=${path.join(temporaryRoot, "data")}`,
+    ]);
+    assert.equal(exitCode, 0);
+    await assert.rejects(
+      fs.access(path.join(temporaryRoot, "config")),
+      (error) => error.code === "ENOENT",
+    );
+    await assert.rejects(
+      fs.access(path.join(temporaryRoot, "data")),
+      (error) => error.code === "ENOENT",
+    );
+  } finally {
+    console.log = originalLog;
+    await fs.rm(temporaryRoot, { recursive: true, force: true });
+  }
+
+  const report = JSON.parse(messages.join("\n"));
+  assert.equal(report.schemaVersion, 1);
+  assert.equal(report.overall, "ok");
+  assert.deepEqual(
+    report.checks.map((check) => check.id),
+    ["node", "desktop", "code-layer-a"],
+  );
 });
