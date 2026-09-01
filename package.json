@@ -51,10 +51,10 @@
     "validate:support": "python scripts/release_status.py --check"
   },
   "devDependencies": {
-    "acorn": "8.15.0"
+    "acorn": "8.18.0"
   },
   "dependencies": {
-    "@electron/asar": "4.2.1",
+    "@electron/asar": "4.3.0",
     "node-pty": "1.1.0",
     "string-width": "8.2.2"
   }
